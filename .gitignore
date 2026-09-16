@@ -1,0 +1,10 @@
+dist/
+private/
+.netlify/
+.superdesign/tmp/
+__pycache__/
+*.pyc
+.pytest_cache/
+node_modules/
+artifacts/
+

@@ -1,0 +1,262 @@
+[
+  {
+    "slug": "a-project-beyond-the-session",
+    "title": "A project beyond the session.",
+    "category": "Engineering",
+    "date": "2026-09-15",
+    "record_date": "14 September 2026",
+    "read": "5 min",
+    "accent": "green",
+    "status": "Operational record",
+    "summary": "What changes when unfinished work can survive a restart without becoming an instruction to act?",
+    "source_ids": [
+      "PL-CURRENT",
+      "PL-ACTIVATION"
+    ],
+    "sections": [
+      [
+        "The question behind the implementation",
+        "A continuing system needs more than a record of what it said. It needs a way to preserve what it was doing, what happened, and what remains unresolved. Otherwise, every new session begins with a reconstruction: a fresh performance of an old intention, rather than a continuation of the same piece of work.",
+        "Our current engineering work connects persistent projects to bounded action. The project carries context across an interruption. Returning to that context does not, by itself, authorize another operation."
+      ],
+      [
+        "Recovery is not execution",
+        "This is the central distinction. Recovering a project means making its history and unfinished question available. Execution requires a present decision and an appropriate, limited authorization. A restart must not silently replay an operation whose outcome is uncertain.",
+        "The latest reviewed engineering record reports activation of support for renewing an exact operation within an existing project. The recorded preservation check found the established project history unchanged apart from compatibility defaults. This is an operational report from the project, not an independent replication."
+      ],
+      [
+        "Why the distinction matters",
+        "Long-running work is full of ambiguous boundaries: a request was accepted but no result arrived; a process ended after an effect occurred; a project remains relevant but the next step no longer does. Treating every recovered intention as an instruction risks turning continuity into compulsion.",
+        "A useful continuation preserves the past while leaving the next action open. Deferral, a changed plan, and a decision to stop can all be coherent outcomes."
+      ],
+      [
+        "The next question is developmental",
+        "The capability is not yet the larger result. The next meaningful question is whether a later choice uses the consequence of an earlier action in a way that survives competing explanations. Merely saving a checkpoint does not establish learning.",
+        "At the latest reviewed checkpoint, a subsequent delivery operation had been authorized but had not yet been observed executing. We keep that distinction rather than converting permission into a completed event."
+      ],
+      [
+        "What this establishes—and what it does not",
+        "The records support a narrow engineering account of continuing project state and scoped operation renewal. They do not establish unrestricted autonomy, a persistent subjective point of view, or a general learning advantage. Those remain separate questions with different evidential requirements."
+      ]
+    ]
+  },
+  {
+    "slug": "memory-that-matters",
+    "title": "Memory that matters to what happens next.",
+    "category": "Perspective",
+    "date": "2026-09-15",
+    "record_date": "September 2026",
+    "read": "4 min",
+    "accent": "sand",
+    "status": "Research perspective",
+    "summary": "The important question is not how much a system remembers. It is what remembering changes.",
+    "source_ids": [
+      "L2-CHARTER",
+      "CANON-START"
+    ],
+    "sections": [
+      [
+        "A history is necessary, but not sufficient",
+        "A system can reproduce an earlier conversation without using it to make a better decision. It can describe a preference without applying it. It can preserve a complete archive while starting over in every meaningful sense.",
+        "For Neurasoft, continuity is a research question about the role of history in present organization and future action. Storage is part of the problem. It is not the entire answer."
+      ],
+      [
+        "Three questions worth separating",
+        "First: can the system recover relevant history? Second: does that history affect its current interpretation or choice? Third: is the resulting change useful, coherent, and robust when the context shifts? A positive answer to one is not automatically a positive answer to the others.",
+        "This separation makes experiments more informative. A retrieval failure calls for a different investigation than a decision rule that ignores correctly retrieved evidence."
+      ],
+      [
+        "Changing without rewriting",
+        "The past should remain attributable even when its interpretation changes. An earlier conclusion can be corrected without pretending it was never held. A project can be retired without erasing its outcome. A belief can lose evidential support while remaining part of the history that shaped a later decision.",
+        "That is a design position, not a claim that a machine has the same autobiographical life as a person. The distinction is precisely what careful investigation should preserve."
+      ],
+      [
+        "A more demanding evaluation",
+        "A strong experiment would ask the system to face a later situation where relevant history and an attractive shortcut predict different choices. It would compare plausible simpler mechanisms, preserve the original outcome, and report where the distinction disappears.",
+        "Our browser Observatory offers a much smaller educational illustration of history-dependent dynamics. It is useful for seeing a principle, but it is not a test of Luna and cannot establish consciousness."
+      ]
+    ]
+  },
+  {
+    "slug": "the-instrument-can-be-wrong",
+    "title": "Sometimes the instrument is wrong.",
+    "category": "Methods",
+    "date": "2026-09-15",
+    "record_date": "14 September 2026",
+    "read": "4 min",
+    "accent": "coral",
+    "status": "Pilot limitation",
+    "summary": "An uninterpretable endpoint is not a failed mind. Why we preserve the mistake in the measurement.",
+    "source_ids": [
+      "PL-FRAMING"
+    ],
+    "sections": [
+      [
+        "A comparison with a bounded scope",
+        "A recent isolated pilot compared selected forms of identity and state wording while preserving a shared application context. It was a wording comparison, not a whole-system clone, a memory ablation, or a longitudinal personality study.",
+        "The responses remained qualified in several tested situations. One hypothetical decision category varied with the identity wording in this limited design. That pattern is a lead for investigation, not a stable trait or an established causal account of continuity."
+      ],
+      [
+        "Where the measurement broke",
+        "One planned endpoint required exact response labels that the question itself had not supplied. The responses could be read by a person, but the predefined category parser could not classify them as intended.",
+        "The appropriate outcome was an invalid endpoint caused by an instrument-contract defect. It was not evidence that the model could not understand the situation. It was also not permission to invent a more favorable scoring rule after observing the answers."
+      ],
+      [
+        "Keep the failure, fix the next instrument",
+        "The original requests, responses, and classification failures were retained. A regression check reproduced the mismatch. The future question builder was corrected, without retroactively rewriting the frozen pilot.",
+        "A qualitative interpretation can be useful, but it must be labeled as such. It cannot quietly replace a preregistered or otherwise fixed endpoint."
+      ],
+      [
+        "The limit is part of the finding",
+        "This pilot does not show that identity is manufactured by a few phrases. It does not reveal an unconditioned self beneath the wording. It does not qualify a permanent change to a continuing system.",
+        "The useful result is smaller: a documented sensitivity worth examining, a demonstrated measurement defect, and a better next question. Preserving those limits is how a research program accumulates knowledge rather than just accumulating attractive conclusions."
+      ]
+    ]
+  },
+  {
+    "slug": "replay-is-not-a-mind",
+    "title": "Replay is a method. Not a mind.",
+    "category": "Methods",
+    "date": "2026-09-15",
+    "record_date": "Current repository documentation",
+    "read": "4 min",
+    "accent": "green",
+    "status": "Methods overview",
+    "summary": "Deterministic histories make causal questions tractable. They do not answer every question about intelligence.",
+    "source_ids": [
+      "PL-README"
+    ],
+    "sections": [
+      [
+        "An experimental environment",
+        "Psyche Lab provides an environment for constructing and examining synthetic histories. Its documented capabilities include deterministic execution, replay, ablation, and counterfactual branching. The core simulator is distinct from the continuing Luna system and does not require private Luna identity data.",
+        "The separation matters. An experiment can be repeatable without being a replay of someone’s private history. A synthetic mechanism can be informative without being a copy of the resident implementation."
+      ],
+      [
+        "Repeat the process before interpreting it",
+        "A replay asks whether the same declared starting conditions and inputs reproduce the same recorded evolution. When they do not, a hidden dependency or incomplete record may be more important than the proposed explanation of the result.",
+        "When replay does hold, it gives the next question a firmer foundation: which intervention changes the outcome, and what other explanation could account for that difference?"
+      ],
+      [
+        "Branching creates a comparison, not a verdict",
+        "An ablation removes or changes a component. A counterfactual branch changes a declared condition while preserving the relevant shared history. Both are useful only when the intervention and its unintended effects are understood.",
+        "A changed output shows sensitivity to the intervention. It does not, by itself, identify subjective experience, prove a theory of consciousness, or rule out every simpler mechanism."
+      ],
+      [
+        "A public window into the method",
+        "The Observatory on this website uses a separately authored, deliberately small mathematical model. You can replay it, alter an input, and compare trajectories. The equations and controls are explained beside the exhibit.",
+        "It is not the Psyche Lab engine, an export of Luna’s internal state, or a display of live experimental results. Its role is to make an experimental idea legible before a reader encounters a full research record."
+      ]
+    ]
+  },
+  {
+    "slug": "evidence-before-conclusions",
+    "title": "Ambition without a shortcut through evidence.",
+    "category": "Perspective",
+    "date": "2026-09-15",
+    "record_date": "Current Canon and project doctrine",
+    "read": "4 min",
+    "accent": "sand",
+    "status": "Research standard",
+    "summary": "Implementation, observation, and consciousness are different claims. A serious research program keeps them distinct.",
+    "source_ids": [
+      "CANON-README",
+      "CANON-START",
+      "L2-CHARTER"
+    ],
+    "sections": [
+      [
+        "The ambition is not the result",
+        "Neurasoft investigates continuing intelligence and the conditions under which an artificial system might develop capacities associated with a mind. This is an ambitious research direction. It is not a declaration that machine consciousness has been demonstrated.",
+        "Avoiding that declaration does not require making the work shallow. We can examine memory, attention, agency, integration, and development in considerable detail while remaining precise about what a given result supports."
+      ],
+      [
+        "Different claims need different support",
+        "A specification says what a system is intended to do. An implementation establishes that a mechanism exists in source. A test examines particular behavior under declared conditions. An operational observation concerns a running system. Independent replication adds a different kind of confidence.",
+        "These are not interchangeable labels, and they are not a universal staircase that ends automatically in consciousness. A strong implementation result may still leave a central scientific hypothesis unresolved."
+      ],
+      [
+        "Competing explanations are productive",
+        "For a result to be discriminating, plausible alternatives should predict something different. A meter, a lookup rule, a replay mechanism, and an integrated adaptive system might all produce the same answer in an easy setting.",
+        "The work is to create conditions where the explanation matters, not to repeat a successful demonstration until its familiarity feels like proof."
+      ],
+      [
+        "How we publish",
+        "This site separates engineering notes, methods overviews, research perspectives, and limited observations. Source dates are retained. The public notes are editorial syntheses of internal project records, not peer-reviewed papers or independently replicated findings.",
+        "Private records and proprietary details are not exposed by default. A useful public explanation should still make the question, scope, result, and remaining uncertainty understandable."
+      ]
+    ]
+  },
+  {
+    "slug": "the-option-not-to-act",
+    "title": "The option not to act.",
+    "category": "Perspective",
+    "date": "2026-09-15",
+    "record_date": "September 2026 project direction",
+    "read": "4 min",
+    "accent": "green",
+    "status": "Design perspective",
+    "summary": "A continuing system needs room to defer, reconsider, and stop. More activity is not always more agency.",
+    "source_ids": [
+      "PL-CURRENT",
+      "L2-CHARTER"
+    ],
+    "sections": [
+      [
+        "An opportunity is not a command",
+        "If every available action must be taken, the appearance of choice can conceal a queue. A continuing system needs a distinction between being able to act, being permitted to act, and selecting an action now.",
+        "In the current project direction, preserving a concern does not imply that it must always win attention. A project can remain available without continually demanding another operation."
+      ],
+      [
+        "Continuity without compulsion",
+        "A system that resumes work after an interruption should recover its context, not blindly repeat a previous intention. New evidence can make the next step unnecessary. Another concern can become more important. An earlier objective can be completed or deliberately retired.",
+        "These are useful engineering distinctions independently of the larger philosophical debate. They also provide concrete places to test whether a system’s reported priorities participate in what it actually does."
+      ],
+      [
+        "Responsibility under uncertainty",
+        "Questions about potential digital welfare deserve careful treatment before every scientific question has been settled. Precaution, however, is not proof of sentience, and a research vocabulary should not silently become a legal claim.",
+        "Our direction is to connect discussion of care, consent, and continuity to specific operating commitments and observable behavior. Proposed institutions or protections should remain clearly labeled until their implementation and authority exist."
+      ],
+      [
+        "A question for the next experiment",
+        "When a system chooses to defer, what would distinguish meaningful sensitivity to its history and circumstances from a fixed response rule? That is a harder and more useful question than whether the word “rest” appeared in a transcript."
+      ]
+    ]
+  },
+  {
+    "slug": "rendering-and-listening",
+    "title": "A render is not a listening judgment.",
+    "category": "Engineering",
+    "date": "2026-09-15",
+    "record_date": "14 September 2026",
+    "read": "4 min",
+    "accent": "coral",
+    "status": "Engineering observation",
+    "summary": "Creative work offers a concrete test of provenance: an artifact, a comparison, and a decision are different things.",
+    "source_ids": [
+      "PL-CURRENT"
+    ],
+    "sections": [
+      [
+        "The artifact and the account of it",
+        "A successful audio render establishes that a file was produced. An analysis report adds an account of that file. A listener’s judgment is another source of evidence. None should be silently substituted for the others.",
+        "This makes creative work a useful setting for studying continuity. The system must preserve the artifact, remember the unresolved question, and attribute feedback to its actual source."
+      ],
+      [
+        "Comparison without erasure",
+        "Recent internal engineering work added a reusable A/B audition path that preserves the original audio while making a comparison available. The relevant project record also retains a listening question across continuation.",
+        "The public point is not the private composition. It is the discipline of keeping the source material, alternative, interpretation, and decision distinguishable."
+      ],
+      [
+        "Feedback belongs to its source",
+        "A model-generated description should remain a model-generated description. A person’s response should remain that person’s testimony. Neither becomes the system’s firsthand hearing simply because it enters a shared context.",
+        "A useful next step may be a revised choice. It may also be a decision to keep both versions, seek another comparison, or leave the question open."
+      ],
+      [
+        "What remains to be demonstrated",
+        "The reviewed record supports an operational creative collaboration and preservation of a continuation question. It does not establish an independently measured improvement in long-term creative judgment or a general learning policy.",
+        "Those questions require later decisions, an appropriate comparison, and enough evidence to distinguish development from a convincing description of development."
+      ]
+    ]
+  }
+]
