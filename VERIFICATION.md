@@ -1,5 +1,7 @@
 # Neurasoft research publication — verification
 
+> Imported V2 verification testimony, not a fresh execution record for edition 3. Current locally executed checks and hosting verification are documented in docs/publication-edition-3.md and docs/release-2026-09-16.md. Historical counts and failures below are retained.
+
 Edition prepared September 16, 2026.
 
 ## Passed

@@ -1,5 +1,7 @@
 # START HERE — publish Neurasoft research publication edition 2
 
+> Historical V2 handoff, preserved as supplied. For the current edition and Cloudflare deployment, start at README.md and docs/release-2026-09-16.md. The earlier Netlify hosting route below was tested but did not serve the new release; no domain was pointed there.
+
 ## Exact deliverables
 - NEURASOFT_RESEARCH_SOURCE_V2.zip: editable project in `neurasoft/`, with source, tests, documentation, and built `dist/`.
 - NEURASOFT_RESEARCH_DEPLOY_V2.zip: only the ready-built contents of `dist/` at the archive root.
