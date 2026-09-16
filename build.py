@@ -8,7 +8,7 @@ from datetime import date
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'dist'
 BASE = 'https://neurasoft.us'
-EDITION = '2026-09-15'
+EDITION = '2026-09-16'
 NOTES = json.loads((ROOT/'content/journal.json').read_text())
 SEARCH: list[dict] = []
 ROUTES: list[str] = []
@@ -163,7 +163,9 @@ def build():
  print(f'Built {len(ROUTES)} pages, {len(NOTES)} research notes -> {OUT}')
 
 if __name__=='__main__':
- import sys, publication
+ import sys, publication, edition_three
  publication.install(sys.modules[__name__])
+ edition_three.install(sys.modules[__name__])
  build()
  publication.finish(sys.modules[__name__])
+ edition_three.finish(sys.modules[__name__])

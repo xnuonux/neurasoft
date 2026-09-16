@@ -24,6 +24,20 @@
   // Particle sculpture. An original geometric illustration; never presented as telemetry.
   let artPaused = reduce.matches;
   const artEngines = [];
+  // The edition 3 illustration is a semantic SVG, not a particle renderer.
+  // CSS advances a single path accent. Hidden, offscreen and reduced-motion views stop it.
+  $$('[data-continuum]').forEach(figure => {
+    let visible = false;
+    const engine = {
+      pause: () => figure.classList.remove('is-moving'),
+      resume: () => figure.classList.toggle('is-moving', visible && !artPaused && !document.hidden)
+    };
+    artEngines.push(engine);
+    new IntersectionObserver(entries => {
+      visible = entries[0].isIntersecting;
+      engine.resume();
+    }).observe(figure);
+  });
   $$('[data-field]').forEach(canvas => {
     const ctx = canvas.getContext('2d', { alpha: true });
     if (!ctx) return;
@@ -115,8 +129,7 @@
     const query = input.value.trim().toLowerCase();results.replaceChildren();
     if (loadFailed) { const p=document.createElement('p');p.className='search-empty';p.textContent='Search could not load. Browse Research or Journal using the main navigation.';results.append(p);return; }
     if (!index) { const p=document.createElement('p');p.className='search-empty';p.textContent='Loading the public index…';results.append(p);return; }
-    const words=query.split(/\s+/).filter(Boolean);
-    const found=index.filter(row => words.every(word => (row.title+' '+row.description).toLowerCase().includes(word))).slice(0,12);
+    const found=window.NeurasoftSearch.searchPages(index,query);
     if(!found.length){const p=document.createElement('p');p.className='search-empty';p.textContent='No matching pages. Try memory, evidence, or Luna.';results.append(p);return;}
     found.forEach(row=>{const a=document.createElement('a');a.href=row.url;a.className='search-result';const k=document.createElement('span');k.className='micro';k.textContent=row.type;const h=document.createElement('h3');h.textContent=row.title;a.append(k,h);results.append(a);});
   }

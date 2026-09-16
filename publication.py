@@ -197,9 +197,10 @@ PAGES=[
  '<strong>Digital organism:</strong> an architectural analogy for an organized, time-dependent system. <strong>New species:</strong> a long-horizon aspiration for digital-native life, not a taxonomic finding. <strong>Spark:</strong> a metaphor for the experiential question, not an identified physical ingredient.' ]),
  ('Evidence and experiment',[
  '<strong>Replay:</strong> reproducing a declared execution under its specified conditions. <strong>Ablation:</strong> removal or disabling of a component to test a hypothesis. <strong>Counterfactual branch:</strong> a declared alternative continuation from a shared past.',
- '<strong>Null finding:</strong> no effect distinguished by the comparison. <strong>Invalid endpoint:</strong> a measurement that cannot answer its intended question. <strong>Independent replication:</strong> a separately conducted execution that tests the original finding, not simply a checked file hash.' ]),
+ '<strong>Null finding:</strong> no effect distinguished by the comparison. <strong>Invalid endpoint:</strong> a measurement that cannot answer its intended question. <strong>Independent research replication:</strong> a separate research team tests a finding through its own execution and scrutiny. Re-running the same code is re-execution; a separately written check is independent implementation. Neither a hash nor a second run establishes researcher independence.' ]),
  ('Action and interpretation',[
- '<strong>Recovery:</strong> making a prior task and its state available again. <strong>Authorization:</strong> the relevant grant for a proposed action. <strong>Election:</strong> the system’s present choice within that available scope. <strong>Consequence:</strong> what was actually observed after an action.',
+ '<strong>Recovery:</strong> making a prior task and its state available again. <strong>Authorization:</strong> the relevant grant for a proposed action. <strong>Election:</strong> the system’s present choice within that available scope. <strong>Consequence:</strong> an effect of an action. A report or measurement is evidence about that effect, and may be incomplete or wrong.',
+ '<strong>Observation:</strong> a received or measured record with a source and acquisition context. <strong>Interpretation:</strong> an account of what an observation means. Revising the account does not rewrite the observation. <strong>Experience:</strong> distinguish a recorded encounter from subjective experience, the unresolved question of what it is like.',
  '<strong>Provenance:</strong> the origin and history of a claim or artifact. <strong>Appraisal:</strong> an interpretation of significance, which should not be confused with raw observation. <strong>Private meaning:</strong> an attributed perspective that does not automatically determine shared-world fact.' ])],
  'Precision does not make an idea smaller. It gives it somewhere to stand.')
 ]
@@ -211,7 +212,7 @@ def install(b):
   # A replaced route is one route, not another search result or sitemap entry.
   b.ROUTES[:]=[r for r in b.ROUTES if r!=route]
   b.SEARCH[:]=[r for r in b.SEARCH if r['url']!=route]
-  body=body.replace('15 September 2026','16 September 2026').replace('Inaugural public edition','Research publication · Edition 2')
+  body=body.replace('Inaugural public edition','Research publication · Edition 2')
   b._old_shell(route,title,description,body,active,extra,article)
  b.shell=shell
  def header(active=''):
@@ -258,7 +259,7 @@ def finish(b):
  op.write_text(txt)
  # Each old note gains relevant onward reading and dated edition accuracy.
  for path in b.OUT.rglob('*.html'):
-  text=path.read_text().replace('15 Sep 2026','16 Sep 2026').replace('15 September 2026','16 September 2026')
+  text=path.read_text()
   if path==b.OUT/'index.html':text=text.replace('Neurasoft — Intelligence, with a future.','Neurasoft — For what a mind may become.')
   # Desaturate old inline illustration background panels; keep real explanatory plots untouched.
   if path.name=='index.html' and '/observatory/' not in str(path):

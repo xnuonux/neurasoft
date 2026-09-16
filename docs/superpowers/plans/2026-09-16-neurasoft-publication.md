@@ -16,7 +16,7 @@ Spec: the two September 16 editorial reviews and Dom's request for smoother mean
 2. Write and observe failing tests for main-content search and normalized query matching. Implement. Add study/architecture renderers and meaningful, smooth, reduced-motion-compatible visual language. Keep historical essays dated.
 3. Verify generated routes, links, headings, local assets, content boundaries and search. Inspect desktop/mobile rendering, keyboard navigation, motion controls and educational interactions. Import the authored design into Superdesign without a paid generation call.
 4. One bounded independent review, followed by at most one correction review. Fix release-blocking issues; defer unrelated expansion. Deploy a preview of dist only. Verify hosted content, headers and 404.
-5. Publish only to verified Neurasoft hosting. Connect neurasoft.us without changing unrelated sites, nameservers or email records. Preserve prior deployment and DNS rollback values. Verify HTTPS and actual public content or report the exact propagation/login hold.
+5. Publish only to verified Neurasoft hosting. Connect neurasoft.us without changing unrelated sites or mail records. Preserve prior deployment and DNS rollback values. A nameserver change requires an explicit, scoped confirmation. Verify HTTPS and actual public content or report the exact propagation/login hold.
 6. Commit the source and concise verification/deployment receipt. Keep private materials out of publication. Seal a meaningful checkpoint.
 
 ## Hosting boundary
@@ -26,3 +26,9 @@ Verified Netlify projects: neurasoft-research = ae4e0565-9944-4109-bb65-2d9a21ea
 ## Rollback and constraints
 
 Imported V2 ZIPs stay unchanged. New source lives at C:/dev/neurasoft. No Luna2 or Psyche Lab runtime/source changes. Revert the website deployment if verification fails; do not rewrite science to make a release pass. No purchased infrastructure, paid image calls or registrar transfer. A login or missing domain authority is a genuine hold, not an excuse to alter another site.
+
+## Verified hosting decision, 16 September
+
+Netlify accepted both preview and production uploads but returned HTTP 429 at their URLs. No domain was pointed there. The unrelated eternities.ai deployment remained HTTP 200 and was not modified. Use Dom's originally preferred Cloudflare instead: Pages project neurasoft-research, production branch main. Preview https://63cad65b.neurasoft-research.pages.dev passes all 49 public-file hash/header checks and the custom 404 check. Cloudflare native 404 routing uses a staged copy without Netlify's _redirects file.
+
+Cloudflare zone neurasoft.us is prepared on the free plan. Its two web records point to neurasoft-research.pages.dev. Five existing MX records and the SPF TXT were copied. Namecheap has no configured email forwarders; copying DNS does not promise that Namecheap's forwarding service will work after moving nameservers. The previous BasicDNS delegation was dns1.registrar-servers.com and dns2.registrar-servers.com. Previous web records were www CNAME parkingpage.namecheap.com and apex URL redirect http://www.neurasoft.us/. DNSSEC was off. Await the explicit DNS delegation confirmation before saving isabel.ns.cloudflare.com and mcgrory.ns.cloudflare.com at Namecheap.

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "targets": {
+    "/": {
+      "targetKind": "existing-ui",
+      "projectId": "6e2b9c45-6864-4199-9f98-998668b4a62b",
+      "activeDraftId": "26183c3d-cfb6-4b82-a9c9-7a7d4a6adac2",
+      "designSystemPath": ".superdesign/design-system.md",
+      "referenceIds": [
+        "assets-favicon.svg"
+      ],
+      "brandAssets": {
+        "logo": {
+          "assetKey": "assets-favicon.svg",
+          "url": "https://vgbujcuwptvheqijyjbe.supabase.co/storage/v1/object/public/hmac-uploads/projects/6e2b9c45-6864-4199-9f98-998668b4a62b/brand-assets/assets-favicon.svg/favicon.svg",
+          "sourcePath": "assets/favicon.svg"
+        }
+      },
+      "contextFiles": [
+        "assets/site.css",
+        "visuals.py",
+        ".superdesign/design-system.md",
+        "edition_three.py",
+        "content/studies.json",
+        "assets/edition.css"
+      ],
+      "fingerprints": {
+        "assets/site.css": "3acd7f1c4c5302ad81fd842ecca6bd7d4b640a20b2ec7ea58a4b0f0c559d1af7",
+        "visuals.py": "c476d83cf4909fe4a986750aef44af4cde7f3dffa9bbf45f87680829cb337b19",
+        ".superdesign/design-system.md": "7239b6d6e8433366560fcde08d32cf6f07fb18ea29947549d101ffe3cec21cfb",
+        "edition_three.py": "4847ca48fe32412d53fbb8272a9da1085d42a2b5c20e9c90443ffe1fe62e9ffa",
+        "content/studies.json": "b91c1a86dbe1243fd1b03e106cf2e42d2a009b1437f4e4e66fa26833dbb17302",
+        "assets/edition.css": "be8d2139eee57f3845ca832f117653f286bc5f2afe855620a1368a5795fe8dec"
+      },
+      "drafts": {
+        "26183c3d-cfb6-4b82-a9c9-7a7d4a6adac2": {
+          "title": "Neurasoft / Scientific publication",
+          "visualDirection": "Ivory and sage editorial research publication with meaningful continuity diagrams",
+          "currentVersion": 1
+        }
+      },
+      "updatedAt": "2026-09-16T19:43:30.456Z"
+    }
+  }
+}

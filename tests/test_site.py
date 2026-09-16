@@ -16,7 +16,7 @@ class SiteTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
   cls.pages=list(DIST.rglob('*.html'));cls.text={p:p.read_text() for p in cls.pages};cls.docs={p:Document(t) for p,t in cls.text.items()};cls.joined='\n'.join(cls.text.values())
- def test_33_html_pages(self):self.assertEqual(len(self.pages),33)
+ def test_37_html_pages(self):self.assertEqual(len(self.pages),37)
  def test_7_full_journal_notes(self):self.assertEqual(len(list((DIST/'journal').glob('*/index.html'))),7)
  def test_every_page_has_one_h1(self):
   for p,d in self.docs.items():self.assertEqual(sum(t=='h1' for t,a in d.tags),1,str(p))
@@ -58,7 +58,7 @@ class SiteTests(unittest.TestCase):
  def test_search_index_targets(self):
   for row in json.loads((DIST/'assets/search-index.json').read_text()):self.assertTrue((DIST/row['url'].strip('/')/'index.html').exists())
  def test_sitemap_xml(self):
-  tree=ET.parse(DIST/'sitemap.xml');self.assertEqual(len(list(tree.getroot())),32)
+  tree=ET.parse(DIST/'sitemap.xml');self.assertEqual(len(list(tree.getroot())),36)
  def test_publish_directory(self):
   config=tomllib.loads((ROOT/'netlify.toml').read_text());self.assertEqual(config['build']['publish'],'dist')
  def test_csp(self):self.assertIn("default-src 'self'",(DIST/'_headers').read_text())
