@@ -2,7 +2,7 @@
 
 Published on Cloudflare Pages, 16 September 2026. 37 HTML pages (36 content pages and a 404), seven preserved journal essays, two local educational exhibits, three attributed research records and an architecture map.
 
-Read `docs/publication-edition-3.md` and `docs/release-2026-09-16.md` for the current release. The V2 handoff and its verification document remain historical evidence, not current deployment instructions.
+Read `docs/publication-edition-3.md` and `docs/release-2026-09-16.md` for the current release, then `docs/domain-cutover-2026-09-16.md` for the completed neurasoft.us cutover and two open Cloudflare dashboard actions (Email Address Obfuscation is rewriting the contact links; a CSP-blocked analytics beacon is being injected). The V2 handoff and its verification document remain historical evidence, not current deployment instructions.
 
 Build: `python3 build.py`, then `python3 tools/stage_cloudflare.py`. No runtime package installation or npm build is needed. Publish **only `artifacts/cloudflare/`** to the Cloudflare Pages project `neurasoft-research`, branch `main`, using Wrangler. The stage omits Netlify's redirect file because Cloudflare serves the native 404 document. Do not publish the repository root or private review materials.
 
