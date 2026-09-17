@@ -1,0 +1,23 @@
+{
+  "schema": "eternities.agent-context/v1",
+  "owner": "Dom",
+  "organization": "Eternities Inc.",
+  "repository_role": "Neurasoft public research publication",
+  "canonical_repository": "xnuonux/eternities-canon",
+  "related_repositories": {
+    "website": "xnuonux/neurasoft",
+    "resident_runtime": "xnuonux/luna-2",
+    "laboratory": "xnuonux/psyche-lab"
+  },
+  "public_identity_file": "content/identity.json",
+  "public_content_file": "content/publication.json",
+  "public_build_directory": "artifacts/cloudflare",
+  "context_last_curated": "2026-09-16",
+  "automatic_live_context_sync": false,
+  "rules": [
+    "Inspect current source before treating status as current.",
+    "Private source access does not grant public release permission.",
+    "A laboratory result is not automatically an implemented resident capability.",
+    "A generated or committed page is not proof that the production domain serves it."
+  ]
+}

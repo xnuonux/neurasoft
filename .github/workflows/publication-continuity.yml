@@ -1,0 +1,64 @@
+name: Publication continuity
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '23 13 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: publication-continuity-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  publication:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Test deterministic publication and review logic
+        run: python -m unittest discover -s tests -p test_continuity.py -v
+      - name: Build original edition and final public stage
+        run: |
+          python build.py
+          python tools/stage_cloudflare.py
+          python tools/verify_publication.py
+          node --test tests/search.test.cjs
+      - name: Store publication candidate, not a deployment
+        uses: actions/upload-artifact@v4
+        with:
+          name: neurasoft-publication-candidate
+          path: |
+            artifacts/cloudflare/
+            artifacts/publication-validation.json
+          retention-days: 14
+  source-review:
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Observe configured source files; never advance review dates
+        id: audit
+        continue-on-error: true
+        env:
+          CONTINUITY_READ_TOKEN: ${{ secrets.CONTINUITY_READ_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python continuity_audit.py
+      - name: Preserve private review report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: continuity-source-review
+          path: artifacts/continuity/
+          retention-days: 30
+      - name: Make unresolved review visible
+        if: steps.audit.outcome == 'failure'
+        run: |
+          echo 'Listed source change, overdue review, or unavailable evidence requires attention. No public content was rewritten.'
+          exit 1
