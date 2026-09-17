@@ -1,0 +1,18 @@
+# The build COPIES assets/ into dist/ and Cloudflare serves those bytes verbatim, so a
+# checkout that converts line endings produces a site that differs from production.
+# The deployed assets are LF. Force LF in the working tree so `python build.py` is
+# reproducible on any machine.
+#
+# Generated HTML is written by build.py through write_text(), which emits the platform
+# newline; production HTML is CRLF and that is expected. Only tracked sources are pinned here.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.zip binary
+*.blend binary
+*.mp4 binary

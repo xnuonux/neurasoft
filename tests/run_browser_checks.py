@@ -36,7 +36,7 @@ with sync_playwright() as p:
  page.locator('#replay-exhibit').click();ok('Replay compares exact complete record','Exact replay: all recorded values match.' in page.locator('#exhibit-status').inner_text())
  page.locator('#perturb-exhibit').click();ok('Intervention produces counterfactual','Largest response difference' in page.locator('#exhibit-status').inner_text())
  with page.expect_download() as event:page.locator('#export-exhibit').click()
- downloaded=event.value;target=ROOT/'private/illustration-test-export.json';downloaded.save_as(str(target));data=json.loads(target.read_text())
+ downloaded=event.value;target=ROOT/'private/illustration-test-export.json';downloaded.save_as(str(target));data=json.loads(target.read_text(encoding='utf-8'))
  ok('Export marks illustration explicitly',data['illustrative_only'] is True and data['connected_to_live_system'] is False)
  ok('Export has full trajectories',len(data['baseline'])==len(data['counterfactual'])==96)
  ok('Histories equal before the intervention',data['baseline'][:32]==data['counterfactual'][:32])
@@ -59,5 +59,5 @@ with sync_playwright() as p:
  ok('No JavaScript runtime errors',not errors,str(errors))
  browser.close()
 report={'mode':'offline Chromium with injected built assets; no hosted or network test','checks':checks,'passed':len(checks),'failed':0,'pages_checked':len(routes),'viewports':[390,1440]}
-(ROOT/'private/browser-report.json').write_text(json.dumps(report,indent=2))
+(ROOT/'private/browser-report.json').write_text(json.dumps(report,indent=2), encoding='utf-8')
 print(f'{len(checks)} checks passed; {len(routes)} pages checked at 390 and 1440 px; zero page errors.')

@@ -1,5 +1,8 @@
 # Neurasoft — Research Publication / Edition 3
 
+**Taking this over? Start at [`PICKUP.md`](PICKUP.md)** — build, verify, the two
+line-ending/encoding defects fixed on 2026-09-16, and two open Cloudflare settings.
+
 Published on Cloudflare Pages, 16 September 2026. 37 HTML pages (36 content pages and a 404), seven preserved journal essays, two local educational exhibits, three attributed research records and an architecture map.
 
 Read `docs/publication-edition-3.md` and `docs/release-2026-09-16.md` for the current release, then `docs/domain-cutover-2026-09-16.md` for the completed neurasoft.us cutover and two open Cloudflare dashboard actions (Email Address Obfuscation is rewriting the contact links; a CSP-blocked analytics beacon is being injected). The V2 handoff and its verification document remain historical evidence, not current deployment instructions.

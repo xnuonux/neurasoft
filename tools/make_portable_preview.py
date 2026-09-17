@@ -11,16 +11,16 @@ OUT = ROOT.parent / 'NEURASOFT_INTERACTIVE_PREVIEW.html'
 def safe_json(value):
     return json.dumps(value, ensure_ascii=False).replace('<', '\\u003c').replace('>', '\\u003e').replace('&', '\\u0026')
 
-css = (DIST / 'assets/site.css').read_text()
-js = (DIST / 'assets/site.js').read_text()
-index = json.loads((DIST / 'assets/search-index.json').read_text())
+css = (DIST / 'assets/site.css').read_text(encoding='utf-8')
+js = (DIST / 'assets/site.js').read_text(encoding='utf-8')
+index = json.loads((DIST / 'assets/search-index.json').read_text(encoding='utf-8'))
 icon = 'data:image/svg+xml;base64,' + base64.b64encode((DIST/'assets/favicon.svg').read_bytes()).decode()
 pages = {}
 for path in sorted(DIST.rglob('*.html')):
     route = '/' + str(path.parent.relative_to(DIST)).replace('\\', '/').strip('./') + '/'
     if route == '//': route = '/'
     if path.name == '404.html': route = '/404/'
-    text = path.read_text()
+    text = path.read_text(encoding='utf-8')
     text = text.replace('<link rel="stylesheet" href="/assets/site.css">', '<style>' + css + '</style>')
     text = text.replace('href="/assets/favicon.svg"', 'href="'+icon+'"')
     text = re.sub(r'<script\s+src="/assets/site.js"\s+defer></script>', '', text)

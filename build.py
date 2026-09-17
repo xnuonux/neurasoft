@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parent
 OUT = ROOT / 'dist'
 BASE = 'https://neurasoft.us'
 EDITION = '2026-09-16'
-NOTES = json.loads((ROOT/'content/journal.json').read_text())
+NOTES = json.loads((ROOT/'content/journal.json').read_text(encoding='utf-8'))
 SEARCH: list[dict] = []
 ROUTES: list[str] = []
 esc = html.escape
@@ -48,7 +48,7 @@ def shell(route,title,description,body,active='',extra='',article=False):
  doc=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(title_tag)}</title><meta name="description" content="{esc(description,quote=True)}"><meta name="theme-color" content="#f4f3ec"><link rel="canonical" href="{canonical}"><link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><meta property="og:type" content="{'article' if article else 'website'}"><meta property="og:site_name" content="Neurasoft"><meta property="og:title" content="{esc(title_tag,quote=True)}"><meta property="og:description" content="{esc(description,quote=True)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{BASE}/assets/social.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Neurasoft. Intelligence, with a future. An Eternities company."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{BASE}/assets/social.png"><link rel="stylesheet" href="/assets/site.css"><script src="/assets/site.js" defer></script>{extra}</head><body{' data-article="true"' if article else ''}>{header(active)}{'<div class="read-progress" aria-hidden="true"></div>' if article else ''}<main id="main" tabindex="-1">{body}</main>{footer()}<dialog class="search-dialog" aria-label="Search Neurasoft"><div class="search-top"><label for="site-search" class="visually-hidden">Search pages and research notes</label><input id="site-search" type="search" placeholder="Search ideas, programs, and notes…" autocomplete="off"><button class="search-close" aria-label="Close search">Esc</button></div><div class="search-results" aria-live="polite"><p class="search-empty">Explore research, Luna, Psyche Lab, and the journal.</p></div><div class="search-hint">Local site search · No query leaves this site</div></dialog></body></html>'''
  if 'data-field=' in body and 'data-pause-art' not in body:
   doc=doc.replace('</main>', '</main><button class="pause-art global-motion" data-pause-art aria-pressed="false">Pause visual</button>',1)
- path.write_text(doc)
+ path.write_text(doc, encoding='utf-8')
 
 def page_hero(kicker,title,lead,breadcrumb='Research',meta=''):
  return f'<section class="page-hero"><div class="wrap"><div class="breadcrumbs"><a href="/">Neurasoft</a><span>/</span><span>{breadcrumb}</span></div><p class="eyebrow">{kicker}</p><h1>{title}</h1><p class="lead">{lead}</p>{meta}</div></section>'
@@ -155,11 +155,11 @@ def build():
  # Helpful offline-friendly actual 404 page.
  shell('/404/','Page not found','This page is not part of the current Neurasoft edition.','<section class="notfound wrap"><span class="eyebrow">Outside the current map</span><h1>404</h1><p>The page you are looking for is not here. The research continues from the main collection.</p><div class="actions">'+link('/','Back to Neurasoft','button')+link('/journal/','Explore the journal')+'</div></section>')
  shutil.copy2(OUT/'404/index.html',OUT/'404.html');shutil.rmtree(OUT/'404')
- (OUT/'assets/search-index.json').write_text(json.dumps([p for p in SEARCH if p['url']!='/404/'],ensure_ascii=False,separators=(',',':')))
- (OUT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'/sitemap.xml\n')
+ (OUT/'assets/search-index.json').write_text(json.dumps([p for p in SEARCH if p['url']!='/404/'],ensure_ascii=False,separators=(',',':')), encoding='utf-8')
+ (OUT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'/sitemap.xml\n', encoding='utf-8')
  (OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{BASE}{r}</loc><lastmod>{EDITION}</lastmod></url>' for r in ROUTES if r!='/404/')+'</urlset>')
- (OUT/'_headers').write_text('/*\n  X-Content-Type-Options: nosniff\n  X-Frame-Options: DENY\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Content-Security-Policy: default-src \'self\'; script-src \'self\'; style-src \'self\'; img-src \'self\' data:; font-src \'self\'; connect-src \'self\'; object-src \'none\'; base-uri \'self\'; form-action \'none\'; frame-ancestors \'none\'\n')
- (OUT/'_redirects').write_text('/* /404.html 404\n')
+ (OUT/'_headers').write_text('/*\n  X-Content-Type-Options: nosniff\n  X-Frame-Options: DENY\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Content-Security-Policy: default-src \'self\'; script-src \'self\'; style-src \'self\'; img-src \'self\' data:; font-src \'self\'; connect-src \'self\'; object-src \'none\'; base-uri \'self\'; form-action \'none\'; frame-ancestors \'none\'\n', encoding='utf-8')
+ (OUT/'_redirects').write_text('/* /404.html 404\n', encoding='utf-8')
  print(f'Built {len(ROUTES)} pages, {len(NOTES)} research notes -> {OUT}')
 
 if __name__=='__main__':

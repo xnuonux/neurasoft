@@ -255,16 +255,16 @@ def finish(b):
  b.shell('/observatory/choice/','The next-step study','A transparent local state-machine demonstration of recovery, permission, choice, and interruption.',choice,'observatory')
  # Add discoverability from the original exhibit rather than replace tested behavior.
  op=b.OUT/'observatory/index.html'
- txt=op.read_text().replace('</main>','<section class="section wrap rule"><div class="section-head"><h2>Another way in.</h2></div><div class="path-grid"><a class="text-link" href="/observatory/choice/">The next-step study ↗</a><a class="text-link" href="/examples/">Illustrative scenarios ↗</a><a class="text-link" href="/consciousness/">What these models cannot settle ↗</a></div></section></main>')
- op.write_text(txt)
+ txt=op.read_text(encoding='utf-8').replace('</main>','<section class="section wrap rule"><div class="section-head"><h2>Another way in.</h2></div><div class="path-grid"><a class="text-link" href="/observatory/choice/">The next-step study ↗</a><a class="text-link" href="/examples/">Illustrative scenarios ↗</a><a class="text-link" href="/consciousness/">What these models cannot settle ↗</a></div></section></main>')
+ op.write_text(txt, encoding='utf-8')
  # Each old note gains relevant onward reading and dated edition accuracy.
  for path in b.OUT.rglob('*.html'):
-  text=path.read_text()
+  text=path.read_text(encoding='utf-8')
   if path==b.OUT/'index.html':text=text.replace('Neurasoft — Intelligence, with a future.','Neurasoft — For what a mind may become.')
   # Desaturate old inline illustration background panels; keep real explanatory plots untouched.
   if path.name=='index.html' and '/observatory/' not in str(path):
    for old,new in [('#102823','#e9eee4'),('#173c2b','#e6ece1'),('#112c26','#e5ebdf'),('#d8ed7f','#799675')]:text=text.replace(old,new)
-  path.write_text(text)
- (b.OUT/'assets/search-index.json').write_text(json.dumps([p for p in b.SEARCH if p['url']!='/404/'],ensure_ascii=False,separators=(',',':')))
+  path.write_text(text, encoding='utf-8')
+ (b.OUT/'assets/search-index.json').write_text(json.dumps([p for p in b.SEARCH if p['url']!='/404/'],ensure_ascii=False,separators=(',',':')), encoding='utf-8')
  (b.OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{b.BASE}{r}</loc><lastmod>{DATE}</lastmod></url>' for r in b.ROUTES if r!='/404/')+'</urlset>')
  print(f'Expanded publication: {len(b.ROUTES)} pages; all indexed; edition {DATE}')

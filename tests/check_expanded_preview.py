@@ -12,7 +12,7 @@ with sync_playwright() as pw:
  b=pw.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
  p=b.new_page(viewport={'width':1440,'height':960},reduced_motion='reduce')
  errors=[];p.on('pageerror',lambda e:errors.append(str(e)))
- p.set_content(preview.read_text(),wait_until='load');f=p.frame_locator('#site-frame')
+ p.set_content(preview.read_text(encoding='utf-8'),wait_until='load');f=p.frame_locator('#site-frame')
  check('Portable home','For what a mind' in f.locator('h1').inner_text())
  f.locator('a[href="/thesis/"]').first.click();p.wait_for_timeout(180)
  check('Portable thesis navigation','future of its own' in f.locator('h1').inner_text())
@@ -40,5 +40,5 @@ with sync_playwright() as pw:
  check('No runtime errors',not errors)
  b.close()
 report={'mode':'Embedded preview HTML injected into Chromium; file URL navigation is environment-blocked and was not verified','checks':checks,'passed':len(checks),'failed':0,'runtime_errors':errors}
-(ROOT/'private/expanded-preview-checks.json').write_text(json.dumps(report,indent=2))
+(ROOT/'private/expanded-preview-checks.json').write_text(json.dumps(report,indent=2), encoding='utf-8')
 print(len(checks),'additional preview/interaction checks passed')

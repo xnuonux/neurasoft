@@ -10,14 +10,14 @@ SHOTS.mkdir(exist_ok=True)
 def load(page,route='/'):
  path=DIST/'index.html' if route=='/' else DIST/route.strip('/')/'index.html'
  page.goto('about:blank')
- content=path.read_text()
+ content=path.read_text(encoding='utf-8')
  content=re.sub(r'<link\b[^>]+>', '', content)
  content=re.sub(r'<script\b.*?</script>', '', content, flags=re.S)
  page.set_content(content,wait_until='domcontentloaded')
- page.add_style_tag(content=(DIST/'assets/site.css').read_text())
- index=json.loads((DIST/'assets/search-index.json').read_text())
+ page.add_style_tag(content=(DIST/'assets/site.css').read_text(encoding='utf-8'))
+ index=json.loads((DIST/'assets/search-index.json').read_text(encoding='utf-8'))
  page.evaluate('index => {window.fetch = async url => {if(url!=="/assets/search-index.json") throw new Error("Unexpected network request"); return {ok:true,json:async()=>index};};}',index)
- page.add_script_tag(content=(DIST/'assets/site.js').read_text())
+ page.add_script_tag(content=(DIST/'assets/site.js').read_text(encoding='utf-8'))
  page.wait_for_timeout(160)
 
 if __name__=='__main__':
