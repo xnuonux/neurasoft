@@ -1,5 +1,7 @@
 # Neurasoft — Research Publication / Edition 3
 
+**Publication-continuity candidate:** read [`AGENTS.md`](AGENTS.md) and [`docs/CONTINUITY.md`](docs/CONTINUITY.md). The staging step now adds reviewed Luna naming, the current-question section and publication records. Validate the final `artifacts/cloudflare/` with `python tools/verify_publication.py`. The original `dist/` and the historical release checks below do not describe this new candidate; no production deployment is implied.
+
 **Taking this over? Start at [`PICKUP.md`](PICKUP.md)** — build, verify, the two
 line-ending/encoding defects fixed on 2026-09-16, and two open Cloudflare settings.
 

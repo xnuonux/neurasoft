@@ -1,0 +1,22 @@
+{
+  "schema": "neurasoft.publication/v1",
+  "edition": "3.1",
+  "editorial_date": "2026-09-16",
+  "research_review_through": "2026-09-16",
+  "native_record_through": "2026-09-14",
+  "current_question": {
+    "status": "Research direction, not an announced result",
+    "title": "When does an encounter change the next choice?",
+    "body": "Our next integration question is whether qualified consequence evidence changes a later choice inside an existing continuing project. An isolated laboratory result is not automatically a capability of Luna.",
+    "scrutiny": "Useful scrutiny would challenge the evidence attribution, the comparison with simpler mechanisms, or what the later choice would actually establish.",
+    "link": "/architecture/"
+  },
+  "changes": [
+    {
+      "date": "2026-09-16",
+      "kind": "Editorial and publication infrastructure",
+      "title": "A clearer name and a visible publication record",
+      "body": "Luna is expanded as Locus of Unified Noetic Agency. This edition adds a current research question, publication history, a public feed, and separate dates for editorial coverage, research review, and native records. Earlier dated notes retain their original scope. No new scientific result is introduced by this editorial update."
+    }
+  ]
+}

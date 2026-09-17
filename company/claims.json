@@ -1,0 +1,29 @@
+{
+  "schema": "eternities.claim-dependencies/v1",
+  "claims": [
+    {
+      "id": "luna-canonical-description",
+      "approval": "reviewed",
+      "reviewed_at": "2026-09-16T00:00:00Z",
+      "max_review_age_days": 30,
+      "surfaces": ["/luna/", "/glossary/", "AGENTS.md"],
+      "sources": [{"repo":"xnuonux/eternities-canon", "ref":"main", "path":"canon/luna.md", "reviewed_blob":"d9217e8680bfeb2ee939abe2d2f1b42875b192e6"}]
+    },
+    {
+      "id": "featured-research-coverage",
+      "approval": "reviewed",
+      "reviewed_at": "2026-09-16T00:00:00Z",
+      "max_review_age_days": 14,
+      "surfaces": ["/", "/findings/", "/updates/", "/studies/"],
+      "sources": [{"repo":"xnuonux/neurasoft", "ref":"main", "path":"content/studies.json", "reviewed_blob":"e24f77a89cf8427e712952dd23aa3d2598f0777b"}]
+    },
+    {
+      "id": "company-orientation",
+      "approval": "reviewed",
+      "reviewed_at": "2026-09-16T00:00:00Z",
+      "max_review_age_days": 30,
+      "surfaces": ["AGENTS.md", "company/context.json", "/about/"],
+      "sources": [{"repo":"xnuonux/eternities-canon", "ref":"main", "path":"START-HERE.md", "reviewed_blob":"f7b0738006b31e2d5fd3a5dc0c38958b8f7573f4"}]
+    }
+  ]
+}
