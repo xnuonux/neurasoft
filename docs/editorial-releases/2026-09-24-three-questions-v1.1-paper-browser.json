@@ -1,0 +1,16 @@
+{
+  "base": "https://neurasoft.us",
+  "results": [
+    {
+      "width": 1440,
+      "status": "passed",
+      "scope": "paper layout, contents, images and downloads"
+    },
+    {
+      "width": 390,
+      "status": "passed",
+      "scope": "paper layout, contents, images and downloads"
+    }
+  ],
+  "errors": []
+}
