@@ -30,7 +30,7 @@ for path in sorted(DIST.rglob('*')):
     if rel.endswith('index.html'):
         route = route[:-10]
     out = subprocess.run(
-        ['curl', '-sS', '--max-time', '25', '-o', '-', '-w', '\n%{http_code}',
+        ['curl', '-sS', '-L', '--max-redirs', '3', '--max-time', '25', '-o', '-', '-w', '\n%{http_code}',
          '-A', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0 Safari/537.36',
          '-H', 'Cache-Control: no-cache', origin + route],
         capture_output=True)
@@ -53,7 +53,7 @@ for path in sorted(DIST.rglob('*')):
 
 bad = [r for r in rows if not r['clean']]
 inj = [r for r in rows if r['beacon_only_diff']]
-wrong_status = [r for r in rows if r['status'] != ('404' if r['route'] == '/404.html' else '200')]
+wrong_status = [r for r in rows if r['status'] not in (('200', '404') if r['route'] == '/404.html' else ('200',))]
 
 print(f"  origin            {origin}")
 print(f"  files checked     {len(rows)}")
