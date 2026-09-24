@@ -1,5 +1,9 @@
 # Neurasoft — Research Publication / Edition 3
 
+**Daily illustrated articles:** see [EDITORIAL.md](EDITORIAL.md) for the September 24
+editorial lane, daily publishing, visual standards, Grok Bot packets and exact
+release receipts. `articles.py` now runs after the historical edition described below.
+
 **Taking this over? Start at [`PICKUP.md`](PICKUP.md)** — build, verify, the two
 line-ending/encoding defects fixed on 2026-09-16, and two open Cloudflare settings.
 
