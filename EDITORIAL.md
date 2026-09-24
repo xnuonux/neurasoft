@@ -70,6 +70,14 @@ build or preview is not proof that the public domain updated. Verify both.
 
 ## Grok Bot handoff
 
+**Primary handoff, selected by Dom on September 24:** private repository
+`xnuonux/psyche-lab`, `master`, `x-articles/`. Its README is the consumer contract,
+`index.json` is the queue, and each self-contained packet lives under
+`inbox/YYYY-MM-DD-slug/`. Upload full Markdown, all PNG/SVG media, packet metadata,
+platform copy and a SHA-256 manifest. Read current master before appending;
+preserve all existing research and receipts. Verify committed packet hashes and
+remote availability. The first packet was published at `5b83a00`.
+
 Public discovery endpoint: https://neurasoft.us/articles/inbox.json
 
 Each entry links to its `grok-packet.json`: title, stable date/slug id, canonical
@@ -77,13 +85,12 @@ URL, full original Markdown URL, ordered PNG image URLs, alt text/captions, X
 short post and LinkedIn adaptation. No secret or private material is in this
 public handoff. RSS at https://neurasoft.us/articles/feed.xml is also available.
 
-Dom's screenshot shows a GB `x-articles/inbox/` workflow and a webhook, but its
-actual filesystem/repo/webhook endpoint has **not** been provided or verified.
-Until connected, public availability and a local zip mean packet prepared, not
-GB delivery or social publication. Do not guess webhook URLs or post to an
-unidentified account. Once Dom supplies the endpoint, read its README/contract,
-deliver once per packet id, and record acknowledgment separately from post URLs.
-GB can alternatively poll the public inbox after 09:30 America/Chicago daily.
+Dom selected Psyche Lab as the place GB should fetch articles. Its GitHub inbox
+is now populated; GB may poll it after 09:30 America/Chicago daily. No webhook
+connection was configured. Repository availability is not proof GB fetched it or
+posted socially. Record acknowledgment separately from actual post URLs under
+`x-articles/receipts/`. GB needs its own access to the private Psyche Lab repository.
+The public inbox remains an alternative if its GitHub connection is unavailable.
 
 The packet authorizes publication (`publish: auto`) under Dom's explicit request.
 GB should check its account queue for the packet id/canonical URL, publish a native
