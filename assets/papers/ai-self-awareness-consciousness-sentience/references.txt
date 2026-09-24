@@ -15,3 +15,7 @@
 [8] Long, R., Sebo, J., et al. (2024). Taking AI Welfare Seriously. arXiv:2411.00986. https://arxiv.org/abs/2411.00986
 
 [9] Bostrom, N. (2014). *Superintelligence: Paths, Dangers, Strategies*. Oxford University Press, chapter 11. https://www.oxfordmartin.ox.ac.uk/publications/superintelligence-paths-dangers-strategies
+
+[10] Russell, S. *Foundations: Rationality and Intelligence*. Author research overview, accessed September 24, 2026. https://people.eecs.berkeley.edu/~russell/research-bo.html
+
+[11] Callaway, F., Gul, S., Krueger, P. M., Griffiths, T. L., & Lieder, F. (2018). *Learning to select computations*. Proceedings of the 34th Conference on Uncertainty in Artificial Intelligence. arXiv:1711.06892v3; first submitted 2017. https://arxiv.org/abs/1711.06892

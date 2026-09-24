@@ -1,16 +1,22 @@
 {
   "schema": "eternities-publication-manifest-v1",
+  "version": "1.1",
   "hash_domain": "exact released file bytes; manifest excludes itself",
   "files": [
     {
       "path": "ai-self-awareness-ai-consciousness-ai-sentience.pdf",
-      "bytes": 877652,
-      "sha256": "e98377fe7ba6af04d9336dbef783d319c8ff57ea67dd1802fc16c2c25dbac805"
+      "bytes": 1581763,
+      "sha256": "8228d4f9e0f3339cb323fa4f8da9e5bf9c88cf1d1bb626652083008fda34898a"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1764,
+      "sha256": "7d4cb60fef488166de165695a9b5dc534a784c2c8054affc11bc4684bf879116"
     },
     {
       "path": "evidence-ledger.json",
-      "bytes": 7309,
-      "sha256": "ae689eaacc248685ccfa94cb8053cc8512ea49734ae5797da71a953b59bbd28b"
+      "bytes": 9359,
+      "sha256": "c52ee29358ae69c51518775e40531be21fbcd3cada8801a87a9ab208936fd0ad"
     },
     {
       "path": "figures/anatomy.png",
@@ -21,6 +27,16 @@
       "path": "figures/anatomy.svg",
       "bytes": 3144,
       "sha256": "6129e5a0eb28540f9b7351ce9432ca7b6783e4f900c14d95f9a1355ffae62422"
+    },
+    {
+      "path": "figures/cooldown.png",
+      "bytes": 209668,
+      "sha256": "8eb5c8cb729740537660d8550857046388e90238d3b4cd4f02c8e371fcb97cb1"
+    },
+    {
+      "path": "figures/cooldown.svg",
+      "bytes": 3560,
+      "sha256": "8d701ed64f272727c8197875eb6ec3ff3a4d695b668b879dddf3fd2db34e8b4a"
     },
     {
       "path": "figures/cover.png",
@@ -43,6 +59,26 @@
       "sha256": "6b6e1b86030e0484c1edcacd40e1beb2e306a5eff9112e99192f9b033b440daa"
     },
     {
+      "path": "figures/memory-selection.png",
+      "bytes": 161303,
+      "sha256": "6f2f41a5f690be52052ecca95e82d8d4b110e57e9a270aa0e917c451dd37a92b"
+    },
+    {
+      "path": "figures/memory-selection.svg",
+      "bytes": 2643,
+      "sha256": "ef6fc81f48aad47ce02d76deae482a04c4f62fcc70b82f781da14143f3cb5750"
+    },
+    {
+      "path": "figures/next-moment.png",
+      "bytes": 207496,
+      "sha256": "72ae3d4601cc6a72097cd6e6dcd821012dc0bc4fb70ae637dbbd20876c0ebbc9"
+    },
+    {
+      "path": "figures/next-moment.svg",
+      "bytes": 2742,
+      "sha256": "516a8f9a8350ba4733df1fec786c8ab623d2c66fe89c48e105d535aacffaa9d0"
+    },
+    {
       "path": "figures/provenance.png",
       "bytes": 158923,
       "sha256": "16d67020b99f2a5ad51ab484d3ccfa081c44ec5b054b073a0480419ceb80b3ac"
@@ -63,14 +99,24 @@
       "sha256": "f42cabc1d388f6781653eb92c05a6e084bca4d2eb809e3a6bf0a58fc69062f15"
     },
     {
+      "path": "figures/repair.png",
+      "bytes": 214741,
+      "sha256": "e567f550af397bb65efa98718ff8ad76edc401d8210f5ffdc0a446af7abfc9ef"
+    },
+    {
+      "path": "figures/repair.svg",
+      "bytes": 2623,
+      "sha256": "cb6b0f90f3d335f318a8b24d2109f0c7df118102e284e1a60bd3c76acc7a90d5"
+    },
+    {
       "path": "index.html",
-      "bytes": 57985,
-      "sha256": "6d891ab3b1062ce77bbac6f2095f9ffc1efe6d9dfabe76d56f69394a3bceb793"
+      "bytes": 67269,
+      "sha256": "12dd766a20739d1de29b6b6d9de2a0fff82bf542cb9a236d2ce485da1cb39203"
     },
     {
       "path": "manuscript.md",
-      "bytes": 50912,
-      "sha256": "36e0f11bfac481aa289a126f18de1dac747921f08151d53fd150fb6923e9a086"
+      "bytes": 59485,
+      "sha256": "d7039b10dd4eebb3f00707c89bb5007868f75bc57adadbe311ac47e5f410e4ed"
     },
     {
       "path": "paper.css",
@@ -80,22 +126,22 @@
     {
       "path": "README.md",
       "bytes": 2176,
-      "sha256": "ff4127ac19c25ec352d20e87b8289ec1f6ac15a915c979c4311621e4273ac58f"
+      "sha256": "eec02b09f2efb31923b3d17c3865744dd0225176e2b590481d15f89f094014a1"
     },
     {
       "path": "references.bib",
-      "bytes": 2122,
-      "sha256": "f71e46b5535fba2367ce226c48950dfc3dc5863cd68aed4e4362b1c77ac3de14"
+      "bytes": 2702,
+      "sha256": "789467c005924ccae042d4d0a76ed6ae22dbcd334f9373ab4d18ad74bf6dfd20"
     },
     {
       "path": "references.txt",
-      "bytes": 1662,
-      "sha256": "f29267ea7de596e73928f285fdfc4a285a3db78132e93f73bc292360f235577a"
+      "bytes": 2111,
+      "sha256": "be6fc4bc0125c96a8522063dad2d688f9d5c81f14aaa1d3317e2ba8ba53aeecd"
     },
     {
       "path": "zenodo-metadata-draft.json",
       "bytes": 2645,
-      "sha256": "d395db717b181c81b3ed11e0aa5a13b7266916335497912b1e48b3ac2e28f166"
+      "sha256": "c8e8cbe1368fd102f4afcb75d09099b5e2892b559c7ed52413669d81c2373a27"
     }
   ]
 }

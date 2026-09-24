@@ -1,6 +1,6 @@
 # ai self awareness. ai consciousness. ai sentience.
 
-David Dominik Wilson · Eternities Inc. · Version 1.0 · September 24, 2026.
+David Dominik Wilson · Eternities Inc. · Version 1.1 · September 24, 2026.
 
 Research perspective and technical report. Not peer reviewed. This paper does not announce demonstrated consciousness, sentience, or an operationally complete Resident.
 

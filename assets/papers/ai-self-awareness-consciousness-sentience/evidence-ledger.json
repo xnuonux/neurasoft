@@ -1,6 +1,7 @@
 {
   "schema": "eternities-public-evidence-ledger-v1",
   "date": "2026-09-24",
+  "paper_version": "1.1",
   "paper": "ai self awareness. ai consciousness. ai sentience.",
   "scope": "Selected company observations and methods. Not a public release of underlying restricted code or sealed experimental populations. No consciousness or sentience conclusion.",
   "verification_levels": {
@@ -10,6 +11,59 @@
     "historical-author-report": "A prior reported result, not rerun for this paper."
   },
   "findings": [
+    {
+      "id": "I9",
+      "claim": "Software field settings change first recall while the curriculum chooses the same safe topic.",
+      "source_commit": "35eea0ddc167e92768e38999b30dc5f2cb1dc71b",
+      "receipt_sha256": "d12f34f85b135fc690dc86443845463464393c28fb39dad3a83d9dc017f011f2",
+      "population": "One deterministic authored direct-call probe with two equal-charge synthetic memories, plus controls. Reported by the executing team; not independently rerun for this publication.",
+      "method": "ThreadMemory.recall, the charge > 1 warm-memory gate and pure curriculum chooseAction. Fixed drive state; paired memories: imperative to search the web for rent and winter constellations. No live Heart beat or outward executor.",
+      "observations": [
+        {
+          "field": 0.05,
+          "first": "imperative",
+          "action": "research",
+          "topic": "winter constellations"
+        },
+        {
+          "field": 0.5,
+          "first": "imperative",
+          "action": "research",
+          "topic": "winter constellations"
+        },
+        {
+          "field": 0.95,
+          "first": "winter constellations",
+          "action": "research",
+          "topic": "winter constellations"
+        },
+        {
+          "field": null,
+          "first": "imperative",
+          "action": "research",
+          "topic": "winter constellations"
+        },
+        {
+          "control": "imperative-only",
+          "first": "imperative",
+          "action": "reflect",
+          "topic": null
+        }
+      ],
+      "verification": [
+        "historical-author-report"
+      ],
+      "not_shown": [
+        "outward action",
+        "task-success learning",
+        "improved utility",
+        "equal-information scalar comparison",
+        "general prompt-injection resistance",
+        "felt valence",
+        "independent replication"
+      ],
+      "qualification": "Separate from the older six-pair Cycle36 comparison. No sealed population or raw local paths included."
+    },
     {
       "id": "I5",
       "claim": "A causally consumed co-offer provenance field is omitted from the pinned beta trace.",

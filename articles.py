@@ -79,6 +79,8 @@ def finish(b):
         return
     for a in articles:
         body = f'<header class="dispatch-hero"><p class="eyebrow"><a href="/articles/">Dispatches</a> / {E(a["kind"])}</p><h1>{E(a["title"])}</h1><p class="lead">{E(a["summary"])}</p><p class="dispatch-meta">{E(a["author"])} · <time datetime="{a["date"]}">{a["date"]}</time> · {E(a["read"])} read</p>{picture(a,a["hero"],a["hero_alt"],True)}</header><article class="dispatch-body">'
+        if a.get('version'):
+            body += f'<p class="dispatch-meta">Version {E(a["version"])} · Refined {E(a.get("updated_at",a["date"]))}</p>'
         if a.get('paper_url'):
             for key in ('paper_url', 'pdf_url'):
                 if not a[key].startswith('/assets/papers/') or '..' in a[key]:
@@ -105,6 +107,11 @@ def finish(b):
         for f in figures:
             f['url'] = b.BASE+'/assets/articles/'+a['slug']+'/'+f['file']
         packet = {'schema':'neurasoft-editorial-packet-v1','id':a['date']+'-'+a['slug'],'title':a['title'],'publish':'auto','date':a['date'], 'canonical_url':b.BASE+route(a),'markdown_url':b.BASE+route(a)+'article.md','images':figures,'x_post':a['x_post']+'\n'+b.BASE+route(a),'linkedin_post':a['linkedin_post']+'\n'+b.BASE+route(a),'social_publication_status':'prepared-not-confirmed','instructions':'Publish this original article with cover and inline images in the indicated order. Use native X Article if available; otherwise publish the supplied short post linking to Neurasoft. Publish the LinkedIn adaptation with the cover and canonical link. Check account queue for this packet id and URL before posting. Do not invent research results or remove the conceptual-diagram labels. Record returned post URLs; do not treat receipt of this packet as publication.'}
+        if a.get('version'):
+            packet.update(revision=a['version'], updated_at=a.get('updated_at',a['date']))
+            packet['instructions'] += ' This is a revision of the same packet identity. If already published, update the existing article where supported; do not create a duplicate social post.'
+        if a.get('facebook_post'):
+            packet['facebook_post'] = a['facebook_post']+'\n'+b.BASE+route(a)
         (dest/'grok-packet.json').write_text(json.dumps(packet,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     cards = ''.join(f'<article class="dispatch-card"><a href="{route(a)}">{picture(a,a["hero"],a["hero_alt"])}</a><div><p class="dispatch-meta">{a["date"]} · {E(a["kind"])}</p><h2><a href="{route(a)}">{E(a["title"])}</a></h2><p>{E(a["summary"])}</p></div></article>' for a in articles)
     b.shell('/articles/','Dispatches','Illustrated essays on minds, machines, and the questions that stay with us.',b.page_hero('Neurasoft / Dispatches','Stay curious.','Illustrated essays on minds, machines, and the questions that stay with us.','Dispatches')+'<div class="dispatch-list">'+cards+'<a href="/articles/feed.xml">Subscribe by RSS</a></div>','journal',extra=CSS+FEED)
