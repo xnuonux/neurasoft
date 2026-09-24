@@ -1,0 +1,101 @@
+{
+  "schema": "eternities-publication-manifest-v1",
+  "hash_domain": "exact released file bytes; manifest excludes itself",
+  "files": [
+    {
+      "path": "ai-self-awareness-ai-consciousness-ai-sentience.pdf",
+      "bytes": 877652,
+      "sha256": "e98377fe7ba6af04d9336dbef783d319c8ff57ea67dd1802fc16c2c25dbac805"
+    },
+    {
+      "path": "evidence-ledger.json",
+      "bytes": 7309,
+      "sha256": "ae689eaacc248685ccfa94cb8053cc8512ea49734ae5797da71a953b59bbd28b"
+    },
+    {
+      "path": "figures/anatomy.png",
+      "bytes": 209735,
+      "sha256": "7f1ed5de2159b34c28fb8a79c891be0068b9693d4d585c7350c5df446463f14e"
+    },
+    {
+      "path": "figures/anatomy.svg",
+      "bytes": 3144,
+      "sha256": "6129e5a0eb28540f9b7351ce9432ca7b6783e4f900c14d95f9a1355ffae62422"
+    },
+    {
+      "path": "figures/cover.png",
+      "bytes": 289460,
+      "sha256": "a0c5610b323583bf20b2a6f70cf505e5e192647cf5a7dc0058e7635e1b3efa36"
+    },
+    {
+      "path": "figures/cover.svg",
+      "bytes": 1521,
+      "sha256": "afae3be6b03828c5367e0c81aabb6797f8d78a00b5f62b9aa41a4d839de80437"
+    },
+    {
+      "path": "figures/evidence.png",
+      "bytes": 220951,
+      "sha256": "d8370bbb6078efa56202ee33c56b4926ab7865348f757d4feb17df2a91575bc8"
+    },
+    {
+      "path": "figures/evidence.svg",
+      "bytes": 2511,
+      "sha256": "6b6e1b86030e0484c1edcacd40e1beb2e306a5eff9112e99192f9b033b440daa"
+    },
+    {
+      "path": "figures/provenance.png",
+      "bytes": 158923,
+      "sha256": "16d67020b99f2a5ad51ab484d3ccfa081c44ec5b054b073a0480419ceb80b3ac"
+    },
+    {
+      "path": "figures/provenance.svg",
+      "bytes": 2270,
+      "sha256": "20f18bac055252d16e80619837022e4f5266a7d212b9da3810707e85d7aa15b8"
+    },
+    {
+      "path": "figures/questions.png",
+      "bytes": 195112,
+      "sha256": "e6a2924aa1533767790049cdbcf185fc7ac30854b449a0a639f294600059cde8"
+    },
+    {
+      "path": "figures/questions.svg",
+      "bytes": 2589,
+      "sha256": "f42cabc1d388f6781653eb92c05a6e084bca4d2eb809e3a6bf0a58fc69062f15"
+    },
+    {
+      "path": "index.html",
+      "bytes": 57985,
+      "sha256": "6d891ab3b1062ce77bbac6f2095f9ffc1efe6d9dfabe76d56f69394a3bceb793"
+    },
+    {
+      "path": "manuscript.md",
+      "bytes": 50912,
+      "sha256": "36e0f11bfac481aa289a126f18de1dac747921f08151d53fd150fb6923e9a086"
+    },
+    {
+      "path": "paper.css",
+      "bytes": 1491,
+      "sha256": "62ef606d3736f8a6ebc2139b2b3d377139cd111cf2b338d84cf18c6f8382885f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2176,
+      "sha256": "ff4127ac19c25ec352d20e87b8289ec1f6ac15a915c979c4311621e4273ac58f"
+    },
+    {
+      "path": "references.bib",
+      "bytes": 2122,
+      "sha256": "f71e46b5535fba2367ce226c48950dfc3dc5863cd68aed4e4362b1c77ac3de14"
+    },
+    {
+      "path": "references.txt",
+      "bytes": 1662,
+      "sha256": "f29267ea7de596e73928f285fdfc4a285a3db78132e93f73bc292360f235577a"
+    },
+    {
+      "path": "zenodo-metadata-draft.json",
+      "bytes": 2645,
+      "sha256": "d395db717b181c81b3ed11e0aa5a13b7266916335497912b1e48b3ac2e28f166"
+    }
+  ]
+}

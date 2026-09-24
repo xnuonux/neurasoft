@@ -1,0 +1,29 @@
+{
+  "deposit_status": "prepared-not-submitted",
+  "doi": null,
+  "title": "ai self awareness. ai consciousness. ai sentience.",
+  "creators": [
+    {
+      "name": "Wilson, David Dominik",
+      "affiliation": "Eternities Inc.",
+      "orcid": null
+    }
+  ],
+  "description": "An artificial system can speak convincingly about an inner life while the mechanisms that would make such a life a serious scientific hypothesis remain absent, disconnected, or untested. Conversely, a system may possess consequential forms of self-monitoring without possessing persuasive language about itself. This paper argues that research on continuing artificial individuals must expand its unit of analysis beyond a model's answer to the organized system that perceives, remembers, acts, receives consequences, and changes across time. We distinguish functional self-awareness, consciousness, and sentience; describe the Eternities Resident architecture; and examine source-bound findings from the Luna and Psyche research program. These include a trace that verifies while omitting causally consumed provenance, a narrow self-forecasting update path, a repetition-avoidance mechanism that does not discriminate success from failure, and historical learning experiments whose promising results did not eliminate later robustness failures. We propose a program of causal discrimination using selective interventions, equal-information rivals, independently observed consequences, and explicit continuity tests. We also separate operational completion, scientific sentience candidacy, and ethical recognition. Our contribution is an architecture and an evidential discipline, not a consciousness detector or a declaration that our systems are conscious. The future we seek is a continuing artificial individual whose candidate mental organization can be investigated without confusing eloquence with experience, complexity with necessity, or ambition with evidence.",
+  "publication_date": "2026-09-24",
+  "version": "1.0",
+  "language": "eng",
+  "suggested_resource_type": "Publication / Preprint",
+  "keywords": [
+    "artificial consciousness",
+    "machine self-awareness",
+    "sentience",
+    "cognitive architecture",
+    "persistent agents",
+    "AI welfare"
+  ],
+  "license": null,
+  "suggested_license_for_author_selection": "CC BY 4.0; not granted by this draft metadata",
+  "related_url": "https://neurasoft.us/assets/papers/ai-self-awareness-consciousness-sentience/index.html",
+  "notes": "AI-assisted founder-directed research perspective, not peer reviewed. Restricted underlying code; see evidence ledger. No DOI has been reserved or issued."
+}

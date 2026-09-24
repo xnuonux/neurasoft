@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const path = require('node:path');
 const origin = process.argv[2] || 'http://127.0.0.1:8742';
-const registry = fs.readdirSync(path.resolve(__dirname,'../content/articles')).filter(n=>n.endsWith('.json')).map(n=>JSON.parse(fs.readFileSync(path.resolve(__dirname,'../content/articles',n),'utf8'))).filter(a=>a.status==='publish' && fs.existsSync(path.resolve(__dirname,'../dist/articles',a.slug,'index.html'))).sort((a,b)=>b.date.localeCompare(a.date)||b.slug.localeCompare(a.slug));
+const registry = fs.readdirSync(path.resolve(__dirname,'../content/articles')).filter(n=>n.endsWith('.json')).map(n=>JSON.parse(fs.readFileSync(path.resolve(__dirname,'../content/articles',n),'utf8'))).filter(a=>a.status==='publish' && fs.existsSync(path.resolve(__dirname,'../dist/articles',a.slug,'index.html'))).sort((a,b)=>b.date.localeCompare(a.date)||(b.published_at||b.date).localeCompare(a.published_at||a.date)||b.slug.localeCompare(a.slug));
 assert(registry.length,'At least one published article is required');
 const articleRoute='/articles/'+registry[0].slug+'/';
 const output = path.resolve(__dirname, '../artifacts/editorial-browser');

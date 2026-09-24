@@ -42,7 +42,7 @@ def load_articles(root, today=None):
         if not a['sources'] or any(not s['url'].startswith('https://') for s in a['sources']):
             raise ValueError('Source links must use HTTPS')
         rows.append(a)
-    return sorted(rows, key=lambda a: (a['date'], a['slug']), reverse=True)
+    return sorted(rows, key=lambda a: (a['date'], a.get('published_at', a['date']), a['slug']), reverse=True)
 
 
 def route(a):
@@ -61,6 +61,8 @@ def paragraph(text):
 def markdown(a, base):
     lines = ['# ' + a['title'], '', a['summary'], '', f"{a['author']} · {a['date']} · {a['kind']}", '',
              f"![{a['hero_alt']}]({base}/assets/articles/{a['slug']}/{a['hero']}.png)", '']
+    if a.get('paper_url'):
+        lines += ['[Read the full technical paper]('+base+a['paper_url']+') · [Download PDF]('+base+a['pdf_url']+')', '']
     lines += [p + '\n' for p in a['intro']]
     for s in a['sections']:
         lines += ['## ' + s['heading'], ''] + [p + '\n' for p in s['paragraphs']]
@@ -77,6 +79,11 @@ def finish(b):
         return
     for a in articles:
         body = f'<header class="dispatch-hero"><p class="eyebrow"><a href="/articles/">Dispatches</a> / {E(a["kind"])}</p><h1>{E(a["title"])}</h1><p class="lead">{E(a["summary"])}</p><p class="dispatch-meta">{E(a["author"])} · <time datetime="{a["date"]}">{a["date"]}</time> · {E(a["read"])} read</p>{picture(a,a["hero"],a["hero_alt"],True)}</header><article class="dispatch-body">'
+        if a.get('paper_url'):
+            for key in ('paper_url', 'pdf_url'):
+                if not a[key].startswith('/assets/papers/') or '..' in a[key]:
+                    raise ValueError('Invalid paper attachment path')
+            body += f'<p class="dispatch-editorial"><a href="{E(a["paper_url"],quote=True)}">Read the full technical paper</a> · <a href="{E(a["pdf_url"],quote=True)}">Download the designed PDF</a></p>'
         body += ''.join(paragraph(p) for p in a['intro'])
         for s in a['sections']:
             body += '<h2>' + E(s['heading']) + '</h2>' + ''.join(paragraph(p) for p in s['paragraphs'])

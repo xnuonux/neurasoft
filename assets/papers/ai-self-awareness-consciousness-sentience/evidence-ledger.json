@@ -1,0 +1,160 @@
+{
+  "schema": "eternities-public-evidence-ledger-v1",
+  "date": "2026-09-24",
+  "paper": "ai self awareness. ai consciousness. ai sentience.",
+  "scope": "Selected company observations and methods. Not a public release of underlying restricted code or sealed experimental populations. No consciousness or sentience conclusion.",
+  "verification_levels": {
+    "source-inspection": "Reading a pinned implementation; no new behavior run.",
+    "authored-module-probe": "Scripted inputs to selected real modules.",
+    "coordinator-reproduction": "Same-program rerun by coordinator; not external independent replication.",
+    "historical-author-report": "A prior reported result, not rerun for this paper."
+  },
+  "findings": [
+    {
+      "id": "I5",
+      "claim": "A causally consumed co-offer provenance field is omitted from the pinned beta trace.",
+      "source_commit": "0c1705de5087b67ae33fc4a1f95bab8a9ce2721d",
+      "source_blobs": {
+        "beta/src/kernel/core.ts": "f3c9071e59d5cb3ed99430e08133c1cd99d3489c",
+        "beta/src/kernel/workspace.ts": "a9cd1532a61e72fcc402211130a8c3e4f068da1a",
+        "beta/src/specialists/specialists.ts": "fb62e13d55f3e972d5707da0c37427d28cefb469"
+      },
+      "method": "One authored matched pair: actual Workspace winner and same-key merge, actual Memory receive, actual Trace record. TypeScript transformed to JavaScript with import-path rewrites. The winning voice item is constant; treatment adds same-key percept provenance. No full Being run or live-specialist comparison.",
+      "control": {
+        "memory_evidence": {
+          "world": 0,
+          "voice": 1
+        },
+        "origin": "voice",
+        "next_retrieval_source": "memory:voice"
+      },
+      "treatment": {
+        "memory_evidence": {
+          "world": 1,
+          "voice": 1
+        },
+        "origin": "world",
+        "next_retrieval_source": "memory"
+      },
+      "result": {
+        "both_traces_verify": true,
+        "entries_equal": true,
+        "common_head": "019757f0f6a3a39bc63e934ad76c6a2feca5ffba6632632b3692373b5078f6a0"
+      },
+      "verification": [
+        "authored-module-probe",
+        "coordinator-reproduction"
+      ],
+      "not_shown": [
+        "hash collision",
+        "false memory attribution",
+        "full-system behavioral benefit",
+        "subjective experience"
+      ],
+      "reproducibility": "Underlying pinned modules remain restricted; the released observations are insufficient for independent execution without code access."
+    },
+    {
+      "id": "I6",
+      "claim": "NativeActionForecasts updates a scoped Beta(1,1) command-exit estimate from matched receipts.",
+      "source_blob": "614ff0e939d65e6a9afd4ea3b0164271a9875714",
+      "source_sha256": "57765414fd0ea116d3675781a3ac6800c37cf92d83a6a06221c554767bfd73de",
+      "method": "Authored host-journal receipt sequence for a single exact command/workspace/deadline scope. No command was dispatched. No provider call.",
+      "observations": [
+        {
+          "step": "prior",
+          "p": 0.5
+        },
+        {
+          "step": "one matched success",
+          "p": 0.6666666666666666
+        },
+        {
+          "step": "one matched failure after success",
+          "p": 0.5
+        },
+        {
+          "step": "wrong-workspace success",
+          "p": 0.5
+        }
+      ],
+      "verification": [
+        "authored-module-probe",
+        "coordinator-reproduction"
+      ],
+      "not_shown": [
+        "forecast calibration",
+        "semantic task success",
+        "private introspective access",
+        "neutral Resident or Habitat caller"
+      ]
+    },
+    {
+      "id": "I7",
+      "claim": "The inspected curriculum cooldown ignores the recorded outcome and its private state is absent from snapshot/wake.",
+      "source_commit": "fa73fa08e110c5700146438815120bbdc5a61fb0",
+      "paths": [
+        "src/runtime/heart.ts",
+        "src/growth/novelty.ts",
+        "src/contracts.ts"
+      ],
+      "method": "Read resolveCurriculumPlan and NoveltyLedger.eligible; compare used fields with Heart.snapshot/wake and Snapshot schema. Eligibility consults fingerprint and beat distance, not complete/blocked/released. No new runtime experiment.",
+      "qualification": "Separate optional PerspectiveStore captures historical observations for specific app-server chat-tool families. It is not a general neutral-Resident outcome-to-body-learning adapter.",
+      "verification": [
+        "source-inspection"
+      ],
+      "not_shown": [
+        "success-versus-failure learning",
+        "fresh-process retention of the private cooldown",
+        "absence of every other persistence path in all repositories"
+      ]
+    },
+    {
+      "id": "I2-V5",
+      "claim": "Historical lab closure across action, delayed consequence, retained learning, checkpoint and reversal.",
+      "population": "Eight authored deterministic laboratory lives; historical program report.",
+      "canonical_reference_commit": "440ab843bc0fdc369df60591e4ddc070cdd41d70",
+      "reported_v5_source": "a9d3fc7b48f1ef1138e6e95e41e755343381bc03",
+      "reported_receipt_digest": "5fdac3266bf0189538990b914866c399c4d7d92a5089266efca8c2b8c2631b0c",
+      "verification": [
+        "historical-author-report"
+      ],
+      "limits": "No rerun or sealed population released. Later V6-V8 work exposed robustness/identifiability limitations. Does not qualify current ordinary Resident integration."
+    },
+    {
+      "id": "I3-Cycle36",
+      "claim": "A body-to-native-choice route exists but the tested cheap cue policy achieved more target selections.",
+      "population": "Six synthetic matched pairs in the supplied lab report; no uncertainty interval or population generalization asserted.",
+      "observations": {
+        "changed_choices": 3,
+        "pairs": 6,
+        "target_selection_native": 4,
+        "target_selection_lesion": 3,
+        "target_selection_cheap_cue": 6
+      },
+      "source_brief_sha256": "ba67ddf3c3d98dfc4de42d911106e45e831d261e00ae70873732aa8362b93b34",
+      "verification": [
+        "historical-author-report"
+      ],
+      "limits": "No new rerun; metrics do not measure consciousness or establish added task utility."
+    },
+    {
+      "id": "I8-memory",
+      "claim": "Richer and simpler memory selectors tied on the reported contract, with additional cost for the richer one.",
+      "population": "360 scored checks over 40 authored synthetic identity-free histories.",
+      "observations": {
+        "richer_passed": 360,
+        "simpler_passed": 360,
+        "denominator_each": 360,
+        "richer_extra_bytes": 84706,
+        "richer_extra_update_units": 330
+      },
+      "source_brief_sha256": "f634aebca0ff4abacefdf7b9cb72245cbf9f376b60edcfeab4fe4bdb10e30405",
+      "verification": [
+        "historical-author-report"
+      ],
+      "limits": "These are contract checks, not 360 independent lives. No global claim about memory representations."
+    }
+  ],
+  "source_access": "Company GitHub links may return 404 without authorization. Manuscript source register pins identities; no claim of open-code reproducibility.",
+  "public_disclosure": "Curated company findings released for this paper at founder request; no raw conversations, live body data, credentials, or closed study populations."
+}

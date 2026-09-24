@@ -20,6 +20,15 @@ unmeasured performance. Public research pages and approved public material can
 inform articles; private transcripts, unpublished lab details, source code,
 personal data and credentials cannot be copied into them.
 
+September 24 flagship exception: Dom explicitly requested a public technical
+paper drawing on selected company findings, titled "ai self awareness. ai
+consciousness. ai sentience." Its curated evidence ledger and exact source URLs
+in `content/public-research-sources.json` are approved for this release. This does
+not authorize disclosure of unrelated private material or underlying source code.
+The longer technical paper and shorter illustrated article are separate editions.
+Optional `published_at` orders multiple explicitly commissioned articles on one
+date; `paper_url` and `pdf_url` link reviewed assets under `/assets/papers/`.
+
 Create a distinctive original 1200×630 cover and one or two useful visual
 explainers. Code/SVG is suitable for diagrams; image generation is suitable for
 illustration. Use actual cited data for quantitative charts, or label a conceptual
