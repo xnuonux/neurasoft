@@ -1,0 +1,858 @@
+{
+  "origin": "https://63af83be.neurasoft-research.pages.dev",
+  "files_checked": 121,
+  "passed": true,
+  "unknown_route": {
+    "status": 404,
+    "custom_404": true
+  },
+  "files": [
+    {
+      "route": "/404.html",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/about/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/architecture/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/ai-self-awareness-consciousness-sentience/article.md",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/ai-self-awareness-consciousness-sentience/grok-packet.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/ai-self-awareness-consciousness-sentience/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/feed.xml",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/how-does-a-seed-know-which-way-is-up/article.md",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/how-does-a-seed-know-which-way-is-up/grok-packet.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/how-does-a-seed-know-which-way-is-up/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/inbox.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/your-ai-remembers-you/article.md",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/your-ai-remembers-you/grok-packet.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/your-ai-remembers-you/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/anatomy.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/anatomy.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/cooldown.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/cooldown.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/cover.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/cover.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/evidence.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/evidence.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/memory-selection.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/memory-selection.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/next-moment.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/next-moment.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/provenance.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/provenance.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/questions.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/questions.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/repair.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/ai-self-awareness-consciousness-sentience/repair.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/how-does-a-seed-know-which-way-is-up/more-than-one-compass.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/how-does-a-seed-know-which-way-is-up/more-than-one-compass.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/how-does-a-seed-know-which-way-is-up/root-tip-compass.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/how-does-a-seed-know-which-way-is-up/root-tip-compass.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/how-does-a-seed-know-which-way-is-up/seed-compass-cover.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/how-does-a-seed-know-which-way-is-up/seed-compass-cover.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/four-questions.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/four-questions.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/memory-cover.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/memory-cover.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/memory-path.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/memory-path.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles.css",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/edition.css",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/favicon.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/ai-self-awareness-ai-consciousness-ai-sentience.pdf",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/CHANGELOG.md",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/evidence-ledger.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/anatomy.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/anatomy.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/cooldown.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/cooldown.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/cover.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/cover.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/evidence.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/evidence.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/memory-selection.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/memory-selection.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/next-moment.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/next-moment.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/provenance.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/provenance.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/questions.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/questions.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/repair.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/figures/repair.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/manifest.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/manuscript.md",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/paper.css",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/README.md",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/references.bib",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/references.txt",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/papers/ai-self-awareness-consciousness-sentience/zenodo-metadata-draft.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/search-index.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/search.js",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/site.css",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/site.js",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/social.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/studies/learning-consequences.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/studies/learning-from-observations.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/studies/reopening-a-belief.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/consciousness/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/contact/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/digital-life/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/examples/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/findings/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/glossary/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/humanity/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/ideas/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/a-project-beyond-the-session/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/evidence-before-conclusions/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/memory-that-matters/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/rendering-and-listening/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/replay-is-not-a-mind/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/the-instrument-can-be-wrong/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/the-option-not-to-act/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/landscape/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/luna/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/observatory/choice/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/observatory/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/outlook/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/privacy/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/psyche-lab/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/reading-room/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/relationships/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/research/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/robotics/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/robots.txt",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/standards/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/studies/learning-consequences/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/studies/learning-from-observations/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/studies/reopening-a-belief/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/thesis/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/voices/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    }
+  ]
+}
