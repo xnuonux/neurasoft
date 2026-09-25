@@ -12,7 +12,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-ROOT = Path(r'C:\dev\neurasoft')
+ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'dist'
 origin = sys.argv[1].rstrip('/')
 
@@ -30,7 +30,7 @@ for path in sorted(DIST.rglob('*')):
     if rel.endswith('index.html'):
         route = route[:-10]
     out = subprocess.run(
-        ['curl', '-sS', '-o', '-', '-w', '\n%{http_code}',
+        ['curl', '-sS', '-L', '--max-redirs', '3', '--max-time', '25', '-o', '-', '-w', '\n%{http_code}',
          '-A', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/140.0 Safari/537.36',
          '-H', 'Cache-Control: no-cache', origin + route],
         capture_output=True)
@@ -53,7 +53,7 @@ for path in sorted(DIST.rglob('*')):
 
 bad = [r for r in rows if not r['clean']]
 inj = [r for r in rows if r['beacon_only_diff']]
-wrong_status = [r for r in rows if r['status'] not in ('200', '404')]
+wrong_status = [r for r in rows if r['status'] not in (('200', '404') if r['route'] == '/404.html' else ('200',))]
 
 print(f"  origin            {origin}")
 print(f"  files checked     {len(rows)}")
@@ -69,5 +69,5 @@ print(f"\n  VERDICT: {'content matches the build' if not bad else 'CONTENT DOES 
       f"{'; Cloudflare beacon injected on ' + str(len(inj)) + ' HTML routes' if inj else ''}")
 Path(sys.argv[2]).write_text(json.dumps(
     {'origin': origin, 'files': len(rows), 'byte_exact': len([r for r in rows if r['exact']]),
-     'beacon_only': len(inj), 'real_mismatch': len(bad), 'rows': rows}, indent=1), encoding='utf-8')
-raise SystemExit(0 if not bad else 1)
+     'beacon_only': len(inj), 'real_mismatch': len(bad), 'wrong_status': wrong_status, 'rows': rows}, indent=1), encoding='utf-8')
+raise SystemExit(0 if not bad and not wrong_status else 1)

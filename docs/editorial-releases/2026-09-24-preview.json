@@ -1,0 +1,445 @@
+{
+  "origin": "https://008d506d.neurasoft-research.pages.dev",
+  "files_checked": 62,
+  "passed": true,
+  "unknown_route": {
+    "status": 404,
+    "custom_404": true
+  },
+  "files": [
+    {
+      "route": "/404.html",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/about/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/architecture/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/feed.xml",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/inbox.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/your-ai-remembers-you/article.md",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/your-ai-remembers-you/grok-packet.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/articles/your-ai-remembers-you/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/four-questions.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/four-questions.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/memory-cover.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/memory-cover.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/memory-path.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/memory-path.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/articles.css",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/edition.css",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/favicon.svg",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/search-index.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/search.js",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/site.css",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/site.js",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/social.png",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/studies/learning-consequences.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/studies/learning-from-observations.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/assets/studies/reopening-a-belief.json",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/consciousness/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/contact/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/digital-life/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/examples/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/findings/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/glossary/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/humanity/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/ideas/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/a-project-beyond-the-session/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/evidence-before-conclusions/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/memory-that-matters/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/rendering-and-listening/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/replay-is-not-a-mind/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/the-instrument-can-be-wrong/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/journal/the-option-not-to-act/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/landscape/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/luna/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/observatory/choice/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/observatory/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/outlook/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/privacy/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/psyche-lab/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/reading-room/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/relationships/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/research/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/robotics/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/robots.txt",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/standards/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/studies/learning-consequences/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/studies/learning-from-observations/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/studies/reopening-a-belief/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/thesis/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    },
+    {
+      "route": "/voices/",
+      "status": 200,
+      "byte_match": true,
+      "csp_present": true,
+      "nosniff": true
+    }
+  ]
+}

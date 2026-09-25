@@ -16,7 +16,11 @@ class SiteTests(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
   cls.pages=list(DIST.rglob('*.html'));cls.text={p:p.read_text(encoding='utf-8') for p in cls.pages};cls.docs={p:Document(t) for p,t in cls.text.items()};cls.joined='\n'.join(cls.text.values())
- def test_37_html_pages(self):self.assertEqual(len(self.pages),37)
+ def test_html_page_count(self):
+  from articles import load_articles
+  articles=load_articles(ROOT)
+  paper_pages={a['paper_url'] for a in articles if a.get('paper_url')}
+  self.assertEqual(len(self.pages),37+1+len(articles)+len(paper_pages))
  def test_7_full_journal_notes(self):self.assertEqual(len(list((DIST/'journal').glob('*/index.html'))),7)
  def test_every_page_has_one_h1(self):
   for p,d in self.docs.items():self.assertEqual(sum(t=='h1' for t,a in d.tags),1,str(p))
@@ -29,19 +33,27 @@ class SiteTests(unittest.TestCase):
    for href in d.links:
     u=urlsplit(href)
     if u.scheme or u.netloc:continue
-    target=p if not u.path else (DIST/unquote(u.path.lstrip('/')))
+    target=p if not u.path else ((DIST/unquote(u.path.lstrip('/'))) if u.path.startswith('/') else (p.parent/unquote(u.path)))
+    target=target.resolve()
+    self.assertTrue(target.is_relative_to(DIST),f'{p}: out-of-site link {href}')
     if target.is_dir():target=target/'index.html'
     self.assertTrue(target.is_file(),f'{p}: {href}')
     if u.fragment:self.assertIn(unquote(u.fragment),self.docs[target].ids,f'{p}: {href}')
  def test_asset_references_exist(self):
   for p,d in self.docs.items():
-   for r in d.refs:self.assertTrue((DIST/r.lstrip('/')).is_file(),f'{p}: {r}')
+   for r in d.refs:self.assertTrue(((DIST/r.lstrip('/')) if r.startswith('/') else (p.parent/r)).is_file(),f'{p}: {r}')
  def test_social_image_exists(self):self.assertTrue((DIST/'assets/social.png').is_file())
  def test_correct_parent_structure(self):
   self.assertIn('Eternities Inc. is the parent company of Neurasoft and Lunari',self.text[DIST/'about/index.html'])
  def test_no_claimed_big_lab_affiliation(self):
   self.assertNotRegex(self.joined,r'(?i)(subsidiary of|backed by|partnered with) (Google|OpenAI|Anthropic)')
- def test_no_private_paths(self):self.assertNotRegex(self.joined,r'(?i)(D:/01-ETERNITIES|[A-Z]:\\|/mnt/data|xnuonux/|github\.com/xnuonux|PID\d|operationRevision|@@reload)')
+ def test_no_private_paths(self):
+  # The founder explicitly released the flagship's curated source citations.
+  # Permit only these exact URLs, never arbitrary repository or local paths.
+  approved=json.loads((ROOT/'content/public-research-sources.json').read_text(encoding='utf-8'))['approved_urls']
+  text=self.joined
+  text=re.sub(r'https://github\.com/xnuonux/[^\s<>"\x27]+',lambda m:'APPROVED_PUBLIC_SOURCE' if m[0] in approved else m[0],text)
+  self.assertNotRegex(text,r'(?i)(D:/01-ETERNITIES|[A-Z]:\\|/mnt/data|xnuonux/|github\.com/xnuonux|PID\d|operationRevision|@@reload)')
  def test_no_credentials(self):self.assertNotRegex(self.joined,r'(sk-[A-Za-z0-9]{16}|ghp_[A-Za-z0-9]+|netlify-mcp\.netlify\.app/proxy/)')
  def test_private_directory_not_deployed(self):self.assertFalse((DIST/'private').exists())
  def test_no_source_bundle_in_public_tree(self):self.assertFalse(any(DIST.rglob('*.zip')))
@@ -58,7 +70,8 @@ class SiteTests(unittest.TestCase):
  def test_search_index_targets(self):
   for row in json.loads((DIST/'assets/search-index.json').read_text(encoding='utf-8')):self.assertTrue((DIST/row['url'].strip('/')/'index.html').exists())
  def test_sitemap_xml(self):
-  tree=ET.parse(DIST/'sitemap.xml');self.assertEqual(len(list(tree.getroot())),36)
+  from articles import load_articles
+  tree=ET.parse(DIST/'sitemap.xml');self.assertEqual(len(list(tree.getroot())),36+1+len(load_articles(ROOT)))
  def test_publish_directory(self):
   config=tomllib.loads((ROOT/'netlify.toml').read_text(encoding='utf-8'));self.assertEqual(config['build']['publish'],'dist')
  def test_csp(self):self.assertIn("default-src 'self'",(DIST/'_headers').read_text(encoding='utf-8'))

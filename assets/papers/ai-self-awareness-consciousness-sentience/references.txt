@@ -1,0 +1,21 @@
+[1] Dehaene, S., Lau, H., & Kouider, S. (2017). What is consciousness, and could machines have it? *Science*, 358, 486–492. https://doi.org/10.1126/science.aan8871
+
+[2] Seth, A. K. (2013). Interoceptive inference, emotion, and the embodied self. *Trends in Cognitive Sciences*, 17, 565–573. https://doi.org/10.1016/j.tics.2013.09.007
+
+[3] Butlin, P., Long, R., et al. (2023). Consciousness in Artificial Intelligence: Insights from the Science of Consciousness. arXiv:2308.08708v3. https://arxiv.org/abs/2308.08708
+
+[4] Binder, F. J., Chua, J., et al. (2024). Looking Inward: Language Models Can Learn About Themselves by Introspection. arXiv:2410.13787. https://arxiv.org/abs/2410.13787
+
+[5] Lindsey, J. (2025, October 29). Emergent Introspective Awareness in Large Language Models. *Transformer Circuits Thread*, Anthropic. https://transformer-circuits.pub/2025/introspection/index.html
+
+[6] Webb, T. W., & Graziano, M. S. A. (2015). The attention schema theory: a mechanistic account of subjective awareness. *Frontiers in Psychology*, 6, 500. https://doi.org/10.3389/fpsyg.2015.00500
+
+[7] Cogitate Consortium, Ferrante, O., Gorska-Klimowska, U., et al. (2025). Adversarial testing of global neuronal workspace and integrated information theories of consciousness. *Nature*, 642, 133–142. https://doi.org/10.1038/s41586-025-08888-1
+
+[8] Long, R., Sebo, J., et al. (2024). Taking AI Welfare Seriously. arXiv:2411.00986. https://arxiv.org/abs/2411.00986
+
+[9] Bostrom, N. (2014). *Superintelligence: Paths, Dangers, Strategies*. Oxford University Press, chapter 11. https://www.oxfordmartin.ox.ac.uk/publications/superintelligence-paths-dangers-strategies
+
+[10] Russell, S. *Foundations: Rationality and Intelligence*. Author research overview, accessed September 24, 2026. https://people.eecs.berkeley.edu/~russell/research-bo.html
+
+[11] Callaway, F., Gul, S., Krueger, P. M., Griffiths, T. L., & Lieder, F. (2018). *Learning to select computations*. Proceedings of the 34th Conference on Uncertainty in Artificial Intelligence. arXiv:1711.06892v3; first submitted 2017. https://arxiv.org/abs/1711.06892
