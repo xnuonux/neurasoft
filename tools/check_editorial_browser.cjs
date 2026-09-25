@@ -35,7 +35,7 @@ fs.mkdirSync(output,{recursive:true});
           await page.evaluate(()=>scrollTo(0,0));
           await page.screenshot({path:path.join(output,`article-${width}.png`),fullPage:true});
           assert.equal(await page.locator('figure').count(),registry[0].sections.filter(s=>'figure' in s).length);
-          await page.locator('a[href="#source-1"]').click();
+          await page.locator('a[href="#source-1"]').first().click();
           assert(page.url().endsWith('#source-1'));
         }
         results.push({width,route,passed:true});

@@ -1,9 +1,10 @@
 import copy
+from html import escape
 import json
 import shutil
 import tempfile
 import unittest
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 import xml.etree.ElementTree as ET
 from articles import load_articles, route
@@ -35,7 +36,7 @@ class ArticleTests(unittest.TestCase):
                 self.assertTrue(image['alt'])
             html = (root/'index.html').read_text(encoding='utf-8')
             self.assertIn(packet['images'][0]['url'], html)
-            self.assertIn('conceptual diagrams, not measurements', html)
+            self.assertIn(escape(a['editorial_note'], quote=True), html)
 
     def test_feed_and_sitemap_are_unique_and_retain_historical_dates(self):
         articles = load_articles(ROOT)
@@ -50,6 +51,7 @@ class ArticleTests(unittest.TestCase):
 
     def test_future_drafts_sorting_duplicates_and_missing_media(self):
         original = load_articles(ROOT)[0]
+        today = date.fromisoformat(original['date'])
         with tempfile.TemporaryDirectory(prefix='neurasoft-editorial-test-') as tmp:
             root=Path(tmp); content=root/'content/articles'; content.mkdir(parents=True)
             shutil.copytree(ROOT/'assets/articles',root/'assets/articles')
@@ -60,16 +62,16 @@ class ArticleTests(unittest.TestCase):
             put('future.json',future)
             draft=copy.deepcopy(original);draft['status']='draft';draft['slug']='draft'
             put('draft.json',draft)
-            self.assertEqual([a['slug'] for a in load_articles(root,date(2026,9,24))],[original['slug']])
-            older=copy.deepcopy(original);older['slug']='older';older['date']='2026-09-23'
+            self.assertEqual([a['slug'] for a in load_articles(root,today)],[original['slug']])
+            older=copy.deepcopy(original);older['slug']='older';older['date']=(today-timedelta(days=1)).isoformat()
             shutil.copytree(ROOT/'assets/articles'/original['slug'],root/'assets/articles/older')
             put('older.json',older)
-            self.assertEqual([a['slug'] for a in load_articles(root,date(2026,9,24))],[original['slug'],'older'])
+            self.assertEqual([a['slug'] for a in load_articles(root,today)],[original['slug'],'older'])
             put('duplicate.json',original)
-            with self.assertRaisesRegex(ValueError,'Duplicate'): load_articles(root,date(2026,9,24))
+            with self.assertRaisesRegex(ValueError,'Duplicate'): load_articles(root,today)
             (content/'duplicate.json').unlink()
             (root/'assets/articles/older'/(older['hero']+'.png')).unlink()
-            with self.assertRaisesRegex(ValueError,'Missing illustration'): load_articles(root,date(2026,9,24))
+            with self.assertRaisesRegex(ValueError,'Missing illustration'): load_articles(root,today)
 
 
 if __name__=='__main__': unittest.main()

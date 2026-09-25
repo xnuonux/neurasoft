@@ -1,0 +1,74 @@
+{
+  "slug": "how-does-a-seed-know-which-way-is-up",
+  "status": "publish",
+  "title": "How does a seed know which way is up?",
+  "summary": "Plant it sideways. The root still turns toward the earth. Inside its tiny tip, physics becomes a signal and growth becomes a compass.",
+  "date": "2026-09-25",
+  "author": "Neurasoft editorial",
+  "kind": "Science / Everyday wonder",
+  "read": "6 min",
+  "hero": "seed-compass-cover",
+  "hero_alt": "Illustrated seed beneath a curved soil horizon, sending a pale shoot upward and a branching root downward while gravity is marked by a subtle vertical line.",
+  "intro": [
+    "Imagine planting a bean sideways in a jar. You can see the seed through the glass, and for a moment it looks as if you've given it the wrong instructions. Its first root points toward the wall. Its shoot is headed nowhere useful.",
+    "Then, over the next days, the lines change. The root curves down. The shoot arcs up. No one turned the seed. It has never seen a map of the jar.",
+    "So how does it find its bearings in the dark? The answer begins with a little weight inside a living cell, and ends with one side of a growing organ becoming longer than the other."
+  ],
+  "sections": [
+    {
+      "heading": "The tiny weight at the tip",
+      "paragraphs": [
+        "In many seed plants, cells near the tip of the primary root contain starch-filled structures called amyloplasts. In gravity-sensing cells, those dense structures act as statoliths: when the root is tilted, they settle toward its newly lower side. The root cap can register that change in orientation. [1]",
+        "This does not mean the seed has a built-in picture of up and down. The root encounters an ordinary physical force. Its cells turn a shift in internal position into a biological signal. Researchers have observed this arrangement in flowering plants and examined how comparable structures and responses differ across plant lineages. [1]",
+        "A compass needle does not need to know the name of north. It only needs a reliable relation to a physical field. The seedling's version is alive, slower, and much more intricate."
+      ],
+      "figure": "root-tip-compass",
+      "figure_alt": "Four-step conceptual diagram: a root tilts, starch-rich statoliths settle in root-cap cells, auxin becomes uneven across the root, and unequal cell growth bends the root downward.",
+      "caption": "A conceptual sequence for a primary root, especially studied in Arabidopsis. The exact signaling steps between statolith movement and hormone transport remain an active research area."
+    },
+    {
+      "heading": "A bend made out of unequal growth",
+      "paragraphs": [
+        "The tip itself is not pulling the root downward like a muscle. It influences cells farther back in the growing zone. Transport proteins called PINs help move the plant hormone auxin asymmetrically after a change in orientation. In the primary root, more auxin on the lower side tends to restrain elongation there; cells on the upper side extend more, and the root bends toward gravity. Experiments disrupting auxin transport or the response in outer root tissues interfere with this curvature. [1][2]",
+        "It is an economical trick. A line curves because its two sides have lived through slightly different rates of growth. The bend is not an instant decision; it is a record of many local cells changing their behavior together.",
+        "A shoot can answer the same gravitational cue in the opposite direction. In shoot tissue, auxin generally promotes elongation on the lower side, helping the shoot curve upward. The same word, auxin, does not imply the same effect in every organ or at every concentration. [3]"
+      ]
+    },
+    {
+      "heading": "There isn't only one compass",
+      "paragraphs": [
+        "A root must do more than head for the center of Earth. It also encounters moisture, nutrients, obstacles and its own branching architecture. Lateral roots often maintain an angle rather than pointing straight down. Experiments in Arabidopsis show that proteins involved in gravity response are regulated differently in lateral roots, allowing those nonvertical growth angles. [3]",
+        "Water offers a revealing counterexample. In a 2017 study, researchers removed the root cap with a laser. The roots lost a normal gravity response yet could still bend toward a water-potential gradient. The team traced that hydrotropic response to different cells and signals in the elongation zone. Gravity and water are not just two names for one steering mechanism. [4]",
+        "The seedling's path is less like following a painted arrow and more like living among several cues. Which cue dominates depends on the organ, developmental stage and environment. The classroom picture is useful, but a real root system is not a collection of perfectly vertical lines."
+      ],
+      "figure": "more-than-one-compass",
+      "figure_alt": "Conceptual cutaway of soil: the main root curves generally downward with gravity, a lateral root branches at an angle, and another root bends toward a wetter patch. Labels distinguish gravity, moisture and branching cues.",
+      "caption": "A conceptual map of competing growth cues, not a photograph or a claim that every species follows these exact paths."
+    },
+    {
+      "heading": "Try turning the world, gently",
+      "paragraphs": [
+        "If you want to watch the question instead of merely reading about it, place a few beans against the side of a clear jar with damp paper towel, and give them enough air and light for ordinary germination. Once roots are visible, rotate the jar a quarter turn. Photograph the same roots each day. Avoid a sealed, waterlogged jar; this is a window onto growth, not a controlled laboratory experiment.",
+        "Look for the difference between a root's old segment and its new growth. The older part does not have to swivel like a hinge. The new pattern of elongation can gradually write a curve. Different seeds and conditions will produce different timings, and a single jar cannot isolate gravity from moisture or light.",
+        "Scientists ask the same question with far more control, including on the International Space Station. NASA studies Arabidopsis seedlings in microgravity to separate gravity's effects from other environmental cues and understand plant growth away from Earth. Those experiments do not imply that plants need gravity to grow, or that every curved root is responding to gravity alone. [5]"
+      ]
+    },
+    {
+      "heading": "What the seed actually knows",
+      "paragraphs": [
+        "Nothing here requires a hidden little gardener inside the seed. The organism has a body that senses orientation, transports signals and changes its own shape. A physical difference becomes a chemical difference; a chemical difference becomes an uneven rate of growth; growth turns the organism toward a different future.",
+        "That is why the sideways bean is so satisfying to watch. The seed does not know which way is up in the way you do. But it does not need to. Give it time, and its body draws an answer in the dark."
+      ]
+    }
+  ],
+  "sources": [
+    {"id": 1, "title": "Zhang et al. (2019), Evolution of fast root gravitropism in seed plants, Nature Communications", "url": "https://www.nature.com/articles/s41467-019-11471-8", "note": "Primary cross-lineage experiments on root-cap statoliths, PIN transport and fast gravity response."},
+    {"id": 2, "title": "Swarup et al. (2005), Root gravitropism requires lateral root cap and epidermal cells, Nature Cell Biology", "url": "https://www.nature.com/articles/ncb1316", "note": "Primary experiments locating transport and growth response to an auxin signal in Arabidopsis roots."},
+    {"id": 3, "title": "Roychoudhry et al. (2023), Antigravitropic PIN polarization maintains non-vertical growth in lateral roots, Nature Plants", "url": "https://www.nature.com/articles/s41477-023-01478-x", "note": "Primary study of maintained lateral-root angles; also discusses organ-specific auxin response."},
+    {"id": 4, "title": "Dietrich et al. (2017), Root hydrotropism is controlled via a cortex-specific growth mechanism, Nature Plants", "url": "https://www.nature.com/articles/nplants201757", "note": "Primary laser-ablation and tissue-specific experiments separating moisture response from root-cap gravity response."},
+    {"id": 5, "title": "NASA, Transgenic Arabidopsis Gene Expression System – Intracellular Signaling Architecture", "url": "https://science.nasa.gov/biological-physical/investigations/apex-03-2-tages-isa/", "note": "Official investigation description; experiment concluded, with science evaluation ongoing on the NASA page."}
+  ],
+  "editorial_note": "Original AI-assisted Neurasoft editorial writing and diagrams. The root-tip and soil figures are conceptual explainers, not experimental data. No Neurasoft plant experiment is claimed.",
+  "x_post": "Plant a bean sideways. Its root still finds down. How?\n\nA tiny weight shifts inside the root tip. A hormone moves differently. One side grows more slowly, and the curve writes itself.\n\nOur illustrated essay on the quiet engineering inside a seed:",
+  "linkedin_post": "Plant a seed sideways and watch what happens. The root bends down; the shoot bends up. How does it find its bearings in the dark?\n\nOur new illustrated Neurasoft essay follows the answer from starch-rich structures inside a root cell to asymmetric growth, then shows why water and branching make the real story more interesting than a simple up/down arrow.\n\nIt includes two original visual explainers and a gentle jar experiment you can try at home. The diagrams are conceptual and the science is linked to primary research.\n\nRead the essay:"
+}
