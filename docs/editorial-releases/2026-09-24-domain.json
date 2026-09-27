@@ -1,0 +1,76 @@
+{
+  "origin": "https://neurasoft.us",
+  "passed": true,
+  "rows": [
+    {
+      "route": "/",
+      "status": 200,
+      "exact": false,
+      "beacon_only": true,
+      "local_sha256": "6bb2a2fce1408b67cdd05f49ae19811a50942a1af10249f18b7dab17b668a231"
+    },
+    {
+      "route": "/articles/",
+      "status": 200,
+      "exact": false,
+      "beacon_only": true,
+      "local_sha256": "b9b6926337a0414748b536d288b30a734a8a15ec4491dc8edea4d61ff922d61a"
+    },
+    {
+      "route": "/articles/your-ai-remembers-you/",
+      "status": 200,
+      "exact": false,
+      "beacon_only": true,
+      "local_sha256": "574be9f16d42427985ad2555bec6eae02da6b9709f52c801b19b9c7f57702cd0"
+    },
+    {
+      "route": "/articles/your-ai-remembers-you/article.md",
+      "status": 200,
+      "exact": true,
+      "beacon_only": false,
+      "local_sha256": "35e8b5b5556837ff6cf509520d412d1254a7292f951151cf764dddb18df34fbf"
+    },
+    {
+      "route": "/articles/your-ai-remembers-you/grok-packet.json",
+      "status": 200,
+      "exact": true,
+      "beacon_only": false,
+      "local_sha256": "60e99f06eb625950f060dfd645b9bc6e0ec4fe06ccaa63eace6a98a79d646391"
+    },
+    {
+      "route": "/articles/inbox.json",
+      "status": 200,
+      "exact": true,
+      "beacon_only": false,
+      "local_sha256": "ef661ba78d7815181ea916a8c26ae4795d336b17a0b47142935cb50e2aadb5fd"
+    },
+    {
+      "route": "/articles/feed.xml",
+      "status": 200,
+      "exact": true,
+      "beacon_only": false,
+      "local_sha256": "2897ab46b1a58b5fe80dddd3ed92073571e9ce3d9fd70dbd15f68c0dd338713e"
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/memory-cover.png",
+      "status": 200,
+      "exact": true,
+      "beacon_only": false,
+      "local_sha256": "e83b065c2072ecdf3145ef39cbc31f0fc6f685b215bc311c2799708600cc6e04"
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/memory-path.png",
+      "status": 200,
+      "exact": true,
+      "beacon_only": false,
+      "local_sha256": "417354efa77f6dd9e781cba01fe9a6151b5154d7ab9287c9daadcabcdca8ea73"
+    },
+    {
+      "route": "/assets/articles/your-ai-remembers-you/four-questions.png",
+      "status": 200,
+      "exact": true,
+      "beacon_only": false,
+      "local_sha256": "e565f87f32faf4b67d5347b677769cd07c50587e6b7c4fba9086bc71bc73920d"
+    }
+  ]
+}

@@ -17,7 +17,8 @@ class EditionTests(unittest.TestCase):
 
     def test_full_content_index_has_no_site_chrome_or_private_refs(self):
         rows = json.loads((ROOT / 'dist/assets/search-index.json').read_text(encoding='utf-8'))
-        self.assertEqual(len(rows), 36)
+        from articles import load_articles
+        self.assertEqual(len(rows), 36+1+len(load_articles(ROOT)))
         for row in rows:
             self.assertTrue(row['text'], row['url'])
             self.assertNotIn('Primary navigation', row['text'])

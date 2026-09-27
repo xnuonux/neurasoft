@@ -1,0 +1,37 @@
+{
+  "origin": "https://neurasoft.us",
+  "results": [
+    {
+      "width": 1440,
+      "route": "/",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "route": "/articles/",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "route": "/articles/ai-self-awareness-consciousness-sentience/",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "route": "/articles/",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "route": "/articles/ai-self-awareness-consciousness-sentience/",
+      "passed": true
+    }
+  ],
+  "search": true,
+  "pageErrors": []
+}

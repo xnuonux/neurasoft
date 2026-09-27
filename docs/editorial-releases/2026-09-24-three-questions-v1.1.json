@@ -1,0 +1,51 @@
+{
+  "version": "1.1",
+  "date": "2026-09-24",
+  "source_commit": "5370948010010be91162741d92cc1ffc24aeabeb",
+  "paper_title": "ai self awareness. ai consciousness. ai sentience.",
+  "author": "David Dominik Wilson",
+  "affiliation": "Eternities Inc.",
+  "paper_pages": 27,
+  "manuscript_words_approx": 8316,
+  "article_prose_words_approx": 2125,
+  "figures_including_cover": 9,
+  "new_diagrams": 4,
+  "paper_sha256": "8228d4f9e0f3339cb323fa4f8da9e5bf9c88cf1d1bb626652083008fda34898a",
+  "preview": "https://36b67ab3.neurasoft-research.pages.dev",
+  "production": "https://bd00d237.neurasoft-research.pages.dev",
+  "production_id": "bd00d237-22d0-4e6a-8972-baa7417c7759",
+  "article": "https://neurasoft.us/articles/ai-self-awareness-consciousness-sentience/",
+  "paper": "https://neurasoft.us/assets/papers/ai-self-awareness-consciousness-sentience/index.html",
+  "public_file_checks": 112,
+  "public_exact_byte_matches": 112,
+  "initial_public_check": {
+    "exact": 111,
+    "mismatches": 1,
+    "route": "/articles/ai-self-awareness-consciousness-sentience/",
+    "observation": "Old article HTML immediately after deployment; subsequent targeted read and complete check match current bytes."
+  },
+  "browser_routes_widths": 6,
+  "paper_browser_widths": 2,
+  "local_checks": {
+    "python_tests": 41,
+    "node_search_tests": 6,
+    "pdf_pages_visually_inspected": 27
+  },
+  "psyche_commit": "a86724ce01b2ba542531661a7b6158d64f694f34",
+  "psyche_packet": "x-articles/inbox/2026-09-24-ai-self-awareness-consciousness-sentience/",
+  "grok_payloads_committed_verified": 53,
+  "paper_payloads_committed_verified": 28,
+  "platform_copy": [
+    "X",
+    "LinkedIn",
+    "Facebook"
+  ],
+  "packet_identity": "unchanged; update existing articles, do not duplicate social posts",
+  "zenodo": "prepared-not-submitted",
+  "doi": null,
+  "reuse_license": "not selected",
+  "social_posts": "not-confirmed",
+  "peer_review": false,
+  "review": "Independent Sol editorial and claim review accepted after corrections; no independent experimental replication.",
+  "new_experiments_run": 0
+}

@@ -2,6 +2,7 @@
 import concurrent.futures
 import hashlib
 import json
+import re
 import sys
 from pathlib import Path
 from urllib.error import HTTPError
@@ -12,6 +13,16 @@ ROOT = Path(__file__).resolve().parents[1]
 origin = sys.argv[1].rstrip('/')
 if urlparse(origin).scheme != 'https':
     raise SystemExit('Verification requires an HTTPS origin.')
+
+# Cloudflare Web Analytics is injected on the custom domain after Pages serves
+# our static HTML. Accept only that exact trailing beacon so the source bytes
+# remain independently checkable; every other difference still fails.
+BEACON = re.compile(rb'<script type="module" src="https://static\.cloudflareinsights\.com/beacon\.min\.js/[^"<>]+" integrity="sha512-[^"<>]+" data-cf-beacon=\'\{[^\'<>]+\}\' crossorigin="anonymous"></script>\r?\n?(?=</body></html>$)')
+allow_beacon = urlparse(origin).hostname == 'neurasoft.us'
+
+
+def public_bytes(data):
+    return BEACON.sub(b'', data) if allow_beacon else data
 
 
 def check(path):
@@ -24,10 +35,12 @@ def check(path):
     request = Request(origin + route, headers={'Cache-Control': 'no-cache', 'User-Agent': 'Neurasoft-Release-Verification/1'})
     with urlopen(request, timeout=25) as response:
         data = response.read()
+        checked = public_bytes(data) if relative.endswith('.html') else data
         return {
             'route': route,
             'status': response.status,
-            'byte_match': hashlib.sha256(data).digest() == hashlib.sha256(path.read_bytes()).digest(),
+            'byte_match': hashlib.sha256(checked).digest() == hashlib.sha256(path.read_bytes()).digest(),
+            'cloudflare_beacon': checked != data,
             'csp_present': "default-src 'self'" in response.headers.get('Content-Security-Policy', ''),
             'nosniff': response.headers.get('X-Content-Type-Options') == 'nosniff',
         }
@@ -53,7 +66,7 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
             row = future.result()
         except HTTPError as error:
             # A hosting platform can correctly return 404 for the direct 404 document.
-            row = {'route': error.url.removeprefix(origin), 'status': error.code, 'byte_match': error.read() == (ROOT/'dist/404.html').read_bytes(), 'csp_present': "default-src 'self'" in error.headers.get('Content-Security-Policy',''), 'nosniff': error.headers.get('X-Content-Type-Options') == 'nosniff'}
+            row = {'route': error.url.removeprefix(origin), 'status': error.code, 'byte_match': public_bytes(error.read()) == (ROOT/'dist/404.html').read_bytes(), 'csp_present': "default-src 'self'" in error.headers.get('Content-Security-Policy',''), 'nosniff': error.headers.get('X-Content-Type-Options') == 'nosniff'}
         if row:
             rows.append(row)
 
@@ -62,7 +75,7 @@ try:
     with urlopen(request, timeout=25) as response:
         missing = {'status': response.status, 'custom_404': False}
 except HTTPError as error:
-    missing = {'status': error.code, 'custom_404': error.read() == (ROOT/'dist/404.html').read_bytes()}
+    missing = {'status': error.code, 'custom_404': public_bytes(error.read()) == (ROOT/'dist/404.html').read_bytes()}
 
 passed = all(r['byte_match'] and r['csp_present'] and r['nosniff'] and (r['status'] == 200 or (r['route'] == '/404.html' and r['status'] == 404)) for r in rows) and missing == {'status':404, 'custom_404':True}
 report = {'origin': origin, 'files_checked': len(rows), 'passed': passed, 'unknown_route': missing, 'files': rows}

@@ -1,0 +1,37 @@
+{
+  "origin": "https://neurasoft.us",
+  "results": [
+    {
+      "width": 1440,
+      "route": "/",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "route": "/articles/",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "route": "/articles/your-ai-remembers-you/",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "route": "/articles/",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "route": "/articles/your-ai-remembers-you/",
+      "passed": true
+    }
+  ],
+  "search": true,
+  "pageErrors": []
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="748" viewBox="0 0 800 748" role="img" aria-labelledby="title desc">
+<title id="title">One reach, three different borders</title><desc id="desc">A single hand-and-rake action is shown with separate visual cues for the physical skin, multisensory nearby space, and tool-linked reachable space. These are conceptual distinctions, not measured boundaries.</desc>
+<defs>
+  <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8f5eb"/><stop offset="1" stop-color="#eaf0e7"/></linearGradient>
+  <radialGradient id="aura"><stop stop-color="#bed6c3" stop-opacity=".74"/><stop offset="1" stop-color="#bed6c3" stop-opacity="0"/></radialGradient>
+  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#769b81" opacity=".26"/></pattern>
+  <style>text{font-family:Arial,Helvetica,sans-serif;fill:#203b34}.serif{font-family:Georgia,serif}.eyebrow{font-size:19px;letter-spacing:4px;fill:#54775f}.small{font-size:18px}.label{font-size:21px;font-weight:700}.muted{fill:#597268}</style>
+</defs><rect width="800" height="748" fill="url(#paper)"/>
+<text class="eyebrow" x="48" y="52">NEURASOFT / EXPLAINER 01</text>
+<text class="serif" x="48" y="110" font-size="43">One reach. Three different borders.</text>
+<text class="muted" x="49" y="147" font-size="20">A single action can be described three ways.</text>
+<rect x="36" y="187" width="728" height="424" rx="22" fill="#edf2ea" stroke="#b8c9ba"/>
+<circle cx="292" cy="395" r="171" fill="url(#aura)"/>
+<circle cx="283" cy="393" r="133" fill="none" stroke="#537c86" stroke-width="3" opacity=".65"/>
+<path d="M38 501 C139 515 202 477 271 410" fill="none" stroke="#203b34" stroke-width="44" stroke-linecap="round"/>
+<path d="M46 501 C149 507 207 463 275 405" fill="none" stroke="#c1d2bb" stroke-width="30" stroke-linecap="round"/>
+<path d="M273 407 Q252 376 271 350 Q291 332 315 357 L331 372" fill="none" stroke="#203b34" stroke-width="10" stroke-linecap="round"/>
+<path d="M282 417 Q274 399 289 383 Q308 370 326 389" fill="none" stroke="#203b34" stroke-width="8" stroke-linecap="round"/>
+<path d="M301 355 L615 278" stroke="#bc8167" stroke-width="13" stroke-linecap="round"/>
+<path d="M604 251 L619 313 M623 246 L637 306 M645 243 L659 304" stroke="#bc8167" stroke-width="8" stroke-linecap="round"/>
+<path d="M319 426 C453 474 620 435 686 293" fill="none" stroke="#54775f" stroke-width="3" stroke-dasharray="8 10"/>
+<circle cx="650" cy="275" r="19" fill="#bc8167" opacity=".28"/><circle cx="650" cy="275" r="8" fill="#bc8167"/>
+<circle cx="271" cy="407" r="18" fill="none" stroke="#203b34" stroke-width="3"/>
+<circle cx="411" cy="330" r="9" fill="#537c86"/><circle cx="242" cy="272" r="8" fill="#537c86"/>
+<path d="M275 407 L118 224" stroke="#203b34" stroke-width="2"/>
+<rect x="62" y="191" width="216" height="64" rx="11" fill="#f7f6ef" stroke="#b8c9ba"/>
+<text class="label" x="77" y="217">1 · Skin</text><text class="small muted" x="77" y="240">Physical body surface</text>
+<path d="M411 330 L461 220" stroke="#537c86" stroke-width="2"/>
+<rect x="472" y="189" width="271" height="68" rx="11" fill="#f7f6ef" stroke="#b8c9ba"/>
+<text class="label" x="489" y="217">2 · Nearby space</text><text class="small muted" x="489" y="241">Senses meet around the hand</text>
+<path d="M608 430 L601 504" stroke="#54775f" stroke-width="2"/>
+<rect x="432" y="510" width="308" height="75" rx="11" fill="#f7f6ef" stroke="#b8c9ba"/>
+<text class="label" x="448" y="538">3 · Tool-linked reach</text><text class="small muted" x="448" y="562">What the action makes accessible</text>
+<text class="muted" x="48" y="658" font-size="19">Ownership and agency are separate questions again.</text>
+<text x="48" y="705" font-size="18" fill="#54775f">CONCEPTUAL MODEL · Curves are not measured neural borders.</text>
+</svg>
