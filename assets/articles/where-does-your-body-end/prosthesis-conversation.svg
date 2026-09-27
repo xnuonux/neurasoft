@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="778" viewBox="0 0 800 778" role="img" aria-labelledby="title desc">
+<title id="title">A prosthesis is a conversation</title><desc id="desc">Conceptual loop: a person&#x27;s intended movement drives a device that moves and contacts the world; available sight, sound, or touch returns to inform the next adjustment. Felt ownership is a separate possible experience, not an automatic output.</desc>
+<defs>
+  <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f8f5eb"/><stop offset="1" stop-color="#eaf0e7"/></linearGradient>
+  <radialGradient id="aura"><stop stop-color="#bed6c3" stop-opacity=".74"/><stop offset="1" stop-color="#bed6c3" stop-opacity="0"/></radialGradient>
+  <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#769b81" opacity=".26"/></pattern>
+  <style>text{font-family:Arial,Helvetica,sans-serif;fill:#203b34}.serif{font-family:Georgia,serif}.eyebrow{font-size:19px;letter-spacing:4px;fill:#54775f}.small{font-size:18px}.label{font-size:21px;font-weight:700}.muted{fill:#597268}</style>
+</defs><rect width="800" height="778" fill="url(#paper)"/>
+<text class="eyebrow" x="48" y="52">NEURASOFT / EXPLAINER 02</text>
+<text class="serif" x="48" y="111" font-size="44">A prosthesis is a conversation.</text>
+<text class="muted" x="49" y="148" font-size="20">Control and returning information form a loop.</text>
+<rect x="42" y="196" width="300" height="110" rx="19" fill="#e1eade" stroke="#b8c9ba"/>
+<text class="label" x="68" y="239">PERSON</text><text x="68" y="272" font-size="23">Intended movement</text>
+<rect x="456" y="196" width="300" height="110" rx="19" fill="#e4ecee" stroke="#b8c9ba"/>
+<text class="label" x="482" y="239">DEVICE</text><text x="482" y="272" font-size="23">Movement and contact</text>
+<rect x="231" y="402" width="336" height="114" rx="19" fill="#f0e5dc" stroke="#d7b9a7"/>
+<text class="label" x="260" y="447">RETURNING SIGNAL</text><text x="260" y="480" font-size="22">Sight, sound, or touch</text>
+<path d="M344 252 H443" stroke="#54775f" stroke-width="5" stroke-linecap="round"/>
+<path d="M431 240 L449 252 L431 264" fill="none" stroke="#54775f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="362" y="231" font-size="17" fill="#54775f">CONTROL</text>
+<path d="M604 310 V351 Q604 370 580 370 H425 V389" fill="none" stroke="#bc8167" stroke-width="5" stroke-linecap="round"/>
+<path d="M413 379 L425 396 L437 379" fill="none" stroke="#bc8167" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M230 458 H153 Q126 458 126 430 V336 Q126 310 153 310 H193" fill="none" stroke="#537c86" stroke-width="5" stroke-linecap="round"/>
+<path d="M180 298 L198 310 L180 322" fill="none" stroke="#537c86" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="45" y="395" font-size="18" fill="#537c86">NEXT</text><text x="45" y="419" font-size="18" fill="#537c86">ADJUSTMENT</text>
+<rect x="43" y="562" width="713" height="125" rx="18" fill="#f8f7f0" stroke="#b8c9ba"/>
+<circle cx="84" cy="610" r="18" fill="#54775f" opacity=".18"/><circle cx="84" cy="610" r="7" fill="#54775f"/>
+<text class="label" x="118" y="602">Felt ownership?</text>
+<text class="small muted" x="118" y="632">A possible experience to ask about, not an automatic output</text>
+<text class="small muted" x="118" y="659">of movement or feedback.</text>
+<text x="48" y="735" font-size="18" fill="#54775f">CONCEPTUAL DESIGN LOOP · Not a clinical result.</text>
+</svg>

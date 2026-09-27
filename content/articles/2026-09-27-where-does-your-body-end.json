@@ -1,0 +1,74 @@
+{
+  "slug": "where-does-your-body-end",
+  "status": "publish",
+  "title": "Where does your body end?",
+  "summary": "Your skin has an edge. Your reach is less certain. A rake, a rubber hand, and a prosthesis reveal why the body we use is not always the body we draw.",
+  "date": "2026-09-27",
+  "author": "Neurasoft editorial",
+  "kind": "Minds / Everyday wonder",
+  "read": "7 min",
+  "hero": "body-border-cover",
+  "hero_alt": "Conceptual illustration of a hand holding a long tool toward a small object; nested curves mark the skin, nearby space, and the reach made possible by the tool.",
+  "intro": [
+    "You reach under a sofa with a broom handle. The handle strikes something, and before you see it, your hands know the difference between a hard floor and the thing you were looking for. Your skin stopped at your fingers. Your useful reach did not.",
+    "That little moment invites an enormous question: where does your body end? There is an anatomical answer, of course. There are also working answers your nervous system keeps revising as you move, sense, and learn. A tool can change one of those answers without becoming flesh. A rubber hand can disturb another without becoming yours forever.",
+    "To understand the difference, we have to resist the tempting phrase that the brain simply ‘absorbs’ a tool. The science is stranger, and more precise, than that."
+  ],
+  "sections": [
+    {
+      "heading": "Three borders, not one",
+      "paragraphs": [
+        "The first border is uncontroversial: the physical surface of your body. A spoon stays outside it however beautifully you use the spoon.",
+        "A second border concerns nearby, action-relevant space. Researchers call one aspect of it peripersonal space: the region around the body where touch can interact with what you see or hear. In a laboratory, they can test this by pairing a tap on the hand with a sound near or farther away and measuring the response. That is a way to study multisensory processing, not a photograph of an invisible bubble. [2]",
+        "A third question is whether something feels like part of you. The sense that a hand is mine is called ownership; the sense that I am causing its movement is agency. They often travel together in ordinary life, but neither can be read straight off the length of a tool or a reaction-time test. The borders are related, not identical."
+      ],
+      "figure": "three-useful-borders",
+      "figure_alt": "Conceptual drawing of a hand and rake: a solid line marks the skin, a soft ring marks nearby multisensory space, and a dotted line traces the extra reach made possible by the rake. The labels say these are different questions, not three measured neural boundaries.",
+      "caption": "Three different questions about one reach. The curves are explanatory, not measured borders or a brain scan."
+    },
+    {
+      "heading": "A rake changes what counts as near",
+      "paragraphs": [
+        "In a classic experiment, researchers trained macaques to retrieve distant objects with a rake and recorded neurons in an area where touch and vision converge. During tool use, the visual fields of some neurons changed to include the rake or the newly accessible space. The authors cautiously described these as possible neural correlates of a modified hand schema. [1]",
+        "This is more interesting than saying ‘the monkey thought the rake was its arm.’ The researchers observed a change in neural responses during a learned action. The animal did not give a report of bodily ownership. The result suggests that the nervous system can organize vision and touch around what the animal can do, not only around where its skin happens to be.",
+        "A later human study asked a clever follow-up: perhaps the apparent expansion is just attention moving toward distant space. Participants spent twenty minutes reaching with a long rake, or twenty minutes doing a visual task that also drew attention outward. After rake use, the usual difference between responses to near and far sounds paired with a touch to the hand became smaller in reaction times and EEG. The attention task did not produce the same pattern. [2]",
+        "That control makes a pure ‘they just looked farther away’ explanation less satisfying. It does not make the mechanism completely settled, nor does it mean every tool permanently redraws a body map. The result belongs to those tasks, those measures, and that comparison."
+      ]
+    },
+    {
+      "heading": "The rubber hand asks another question",
+      "paragraphs": [
+        "Now hide your real hand from view and place a rubber hand where you can see it. In the famous rubber-hand experiment, coordinated sight and touch could make sensations seem to belong to the visible artificial hand. The original report described an interaction among vision, touch, and information about the position of one's own limb. [3]",
+        "It is a beautiful disturbance of the obvious. Your body is not merely whatever your eyes see; it is also not a fixed declaration your eyes can never influence. The timing and agreement of different signals matter.",
+        "But this is not the same claim as the rake experiment. The rake study concerns action and the processing of reachable space. The rubber hand concerns a temporary illusion of bodily ownership. Calling both ‘embodiment’ without saying which question we mean would turn a useful family of findings into a blur."
+      ]
+    },
+    {
+      "heading": "A prosthesis makes the distinction matter",
+      "paragraphs": [
+        "For someone using a prosthetic hand, control, sensation, usefulness, and ownership are not interchangeable design goals. A hand that obeys a command may still feel foreign. A sensation can be meaningful without making every movement intuitive. What the person experiences matters as much as what an engineer can measure from outside.",
+        "In one long-term experimental case, researchers studied a person with a transradial amputation using implanted nerve interfaces and muscle signals to interact with a prosthetic hand. Their measures suggested some degree of prosthesis embodiment under motor-only, sensory-only, and combined conditions. Reports of phantom pain also fell after several types of sessions. The combined condition did not significantly improve embodiment or phantom-pain reduction beyond the motor-only or sensory-only conditions. This was one person, not a treatment trial establishing what will work for everyone. [4]",
+        "The most useful lesson is not that more technology automatically makes a device feel like a limb. It is that a prosthesis is part of a conversation: a person intends a movement, the device moves and meets the world, information returns, and the person adjusts. Engineers can improve that conversation while asking separately whether it helps control, sensation, comfort, or ownership."
+      ],
+      "figure": "prosthesis-conversation",
+      "figure_alt": "Conceptual loop from a person's intention to a prosthetic hand's movement and contact, then through available sensory feedback to the next adjustment. Separate labels distinguish control, sensation, and the possible experience of ownership; ownership is not shown as an automatic output.",
+      "caption": "A design loop, not a clinical result. Control, feedback, and felt ownership are distinct questions; none guarantees the others."
+    },
+    {
+      "heading": "A useful kind of uncertainty",
+      "paragraphs": [
+        "Go back to the broom under the sofa. The handle never crossed the border of your skin. Yet action and sensation let you work through it, and your nervous system could treat events at its tip as relevant to your hand. That flexibility is useful precisely because the world keeps handing us new things to hold.",
+        "The body is neither a rigid outline nor a limitless metaphor. It is a living system that must tell apart itself, its tools, and what those tools make possible, while sometimes knitting them into a single skillful act. The scientific question is not whether a rake is secretly a limb. It is which border changed, for whom, under what conditions, and what that change allowed them to do."
+      ]
+    }
+  ],
+  "sources": [
+    {"id": 1, "title": "Iriki, Tanaka & Iwamura (1996), Coding of modified body schema during tool use by macaque postcentral neurones", "url": "https://pubmed.ncbi.nlm.nih.gov/8951846/", "note": "Primary macaque single-neuron recording during rake use; the authors call the body-schema interpretation a possible correlate."},
+    {"id": 2, "title": "Ronga et al. (2021), Seeming confines: Electrophysiological evidence of peripersonal space remapping following tool-use in humans", "url": "https://iris.unito.it/retrieve/b89b0a5e-9c83-4590-899d-ea49e5a68efd/Seeming%20confines.pdf", "note": "Primary three-experiment human study; main comparison uses a 20-minute rake task and a far-space visual-attention control."},
+    {"id": 3, "title": "Botvinick & Cohen (1998), Rubber hands ‘feel’ touch that eyes see", "url": "https://www.nature.com/articles/35784", "note": "Original report of a temporary rubber-hand illusion involving vision, touch, and proprioception."},
+    {"id": 4, "title": "Page et al. (2018), Motor Control and Sensory Feedback Enhance Prosthesis Embodiment and Reduce Phantom Pain After Long-Term Hand Amputation", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6166773/", "note": "Primary 14-month experimental case with one participant; its embodiment and pain findings do not establish general clinical efficacy."}
+  ],
+  "editorial_note": "Original AI-assisted Neurasoft editorial writing and artwork. The figures are conceptual explainers, not experimental data or clinical diagrams. No Neurasoft neuroscience or prosthetics experiment is claimed.",
+  "x_post": "Where does your body end? Your skin stops at your fingers. Your reach may not.\n\nA rake changes how near and far are processed. A rubber hand can disturb what feels like yours. A prosthesis makes the difference consequential.\n\nOur illustrated essay:",
+  "linkedin_post": "Reach beneath a sofa with a broom. You can often feel what its tip hits before you see it. Where, in that moment, does your body end?\n\nOur new illustrated essay follows a macaque rake experiment, a human tool-use study with an attention control, the rubber-hand illusion, and a carefully bounded prosthesis case. The thread is subtle: physical skin, reachable space, control, and felt ownership are different questions.\n\nThe two original diagrams are conceptual, and each research claim links to a primary source. Read it here:"
+}
